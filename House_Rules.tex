@@ -1,0 +1,476 @@
+\documentclass[letterpaper,twocolumn,openany,nodeprecatedcode]{dndbook}
+
+% Use babel or polyglossia to automatically redefine macros for terms
+% Armor Class, Level, etc...
+% Default output is in English; captions are located in lib/dndstrings.sty.
+% If no captions exist for a language, English will be used.
+%1. To load a language with babel:
+%	\usepackage[<lang>]{babel}
+%2. To load a language with polyglossia:
+%	\usepackage{polyglossia}
+%	\setdefaultlanguage{<lang>}
+\usepackage[english]{babel}
+%\usepackage[italian]{babel}
+% For further options (multilanguage documents, hypenations, language environments...)
+% please refer to babel/polyglossia's documentation.
+
+\usepackage[utf8]{inputenc}
+\usepackage[singlelinecheck=false]{caption}
+\usepackage{hyperref}
+\usepackage{lipsum}
+\usepackage{listings}
+\usepackage{shortvrb}
+\usepackage{stfloats}
+
+\MakeShortVerb{|}
+
+%\newcommand{\vsp}{\vspace{3pt}}
+%\newcommand{\vcl}{\vspace{-4pt}}
+
+\lstset{%
+  basicstyle=\ttfamily,
+  language=[LaTeX]{TeX},
+  breaklines=true,
+}
+
+\begin{document}
+
+\setcounter{tocdepth}{2}
+\tableofcontents
+
+\chapter{House Rules}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% SOURCES
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Sources}
+
+You can use any material from these sourcebooks:
+
+\begin{DndTable}[]{XX}
+    Dungeon Master's Guide (DMG) \\
+    Eberron - Rising from the Last War (ERLW) \\
+    Elemental Evil Player's Companion (EEPC) \\
+    Monster Manual (MM) \\
+    Mordenkainen's Tome of Foes (MTF) \\
+    One Grung Above (OGA) \\
+    Player's Handbook (PH) \\
+    Sage Advice Version 2.4 (SA2.4) \\
+    Sword Coast Adventurer's Guide (SCAG) \\
+    Volo's Guide to Monsters (VGM) \\
+    Xanathar's Guide to Everything (XGE) \\
+\end{DndTable}
+
+You can use material from certain sections of the following sourcebooks:
+
+\begin{DndTable}[]{Xl}
+    \textbf{Sourcebook} & \textbf{Allowed sections} \\
+    Explorer's Guide to Wildemount (EGW) & Backgrounds, spells, subclasses \\
+    Guildmaster's Guide to Ravnica (GGR) & Races, subclasses \\
+\end{DndTable}
+
+The errata version (if any) for all books is specified in Sage Advice (SA2.4, 1).
+
+\subsubsection{Unearthed Arcana}
+You should not use material from Unearthed Arcana, except the following:
+
+\begin{DndTable}[]{lX}
+    \textbf{Unearthed Arcana} & \textbf{Allowed sections} \\
+    The Ranger, Revised (UARR) & All \\
+    Class Feature Variants (UACV) & Ranger only (see pg.\pageref{classRanger}) \\
+\end{DndTable}
+
+\subsubsection{Sage Advice}
+Sage Advice has precedence over all other sources. Unofficial rulings by Jeremy Crawford are also used, but only as guidelines.
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% CHARACTERS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Characters}
+You should use only 27-point buy (PH, 13) or one of the standard arrays listed below to determine your base ability scores.
+
+\begin{DndTable}[]{lcccccc}
+    \textbf{Default} & 8 & 10 & 12 & 13 & 14 & 15 \\
+    \textbf{Wide} & 6 & 8 & 12 & 13 & 15 & 16
+\end{DndTable}
+
+After racial increases, none of your ability scores should exceed 18 at 1st level.
+
+\subsubsection{Hit Points}
+When you gain a level, you can choose to increase your maximum hit points by rolling a Hit Die (rerolling all natural 1s), or by using the fixed value shown in your class entry.
+
+If you choose to roll for a level, you cannot retroactively decide to take the fixed value for that level.
+
+\subsubsection{Proficiency Bonus}
+You can choose to use either the fixed proficiency bonus determined by your character level, or the optional rule for proficiency dice (DMG, 263). Passive values, including DCs, continue to use the fixed proficiency bonus.
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% RACES
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Races}
+
+\subsubsection{Ability Score Increase}
+If your race and subrace together give a +2 and +1 bonus to two fixed ability scores, you may choose which receives the +2 bonus.
+
+For example, Dragonborn, High Elves and Shifters gain this benefit, while Humans, Half-elves, Tritons and Warforged do not.
+
+You can ignore any reduction to an ability score from a racial Ability Score Increase trait.
+
+\subsubsection{Dragonmarks} You should not use Dragonmarked races.
+
+\subsubsection{Flight} Before 5th level, flying speeds granted by racial traits cannot hold you in the air between turns. Unless you have other means of staying aloft, you fall at the end of your turn, taking damage as appropriate (PH, 183).
+
+When you reach 5th level, your flying speeds from racial traits no longer have this restriction.
+
+\subsection{Human}
+This section replaces all human traits from the Player's Handbook (PH, 31). You should not use variant humans.
+
+\subparagraph{Ability Score Increase} Your ability scores each increase by 1.
+\subparagraph{Age} Humans reach adulthood in their late teens and live less than a century.
+\subparagraph{Alignment} Humans tend toward no particular alignment.
+\subparagraph{Size} Your size is Medium.
+\subparagraph{Speed} Your base walking speed is 30 feet.
+\subparagraph{Languages} You can speak, read and write Common and one extra language of your choice.
+\subparagraph{Versatile} You gain proficiency in one skill, one tool, one simple weapon, and one martial weapon of your choice.
+\subparagraph{Talented} You can double your proficiency bonus in one skill from your class list in which you are proficient.
+
+\subsection{Kobold}
+This section replaces your Ability Score Increase trait (VGM, 119).
+
+\subparagraph{Ability Score Increase} Your Dexterity score increases by 2, and choose one of Constitution, Intelligence, Wisdom or Charisma to increase by 1.
+
+\subsection{Grung}
+This section amends your Poisonous Skin trait (OGA, 4).
+
+\subparagraph{Poisonous Skin} The DC of both types of poison is 10 plus your proficiency bonus.
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% CLASSES
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Classes}
+
+\subsection{Multiclassing}
+The optional multiclassing rules from the Player's Handbook (PH, 163) are in use.
+
+\subsection{Barbarian}
+
+\subsubsection{Frenzy}
+This section replaces the Beserker's Frenzy feature (PH, 49).
+
+Starting when you choose this path at 3rd level, you can go into a frenzy when you rage. If you do so, for the duration of your rage you can attack one additional time whenever you take the Attack action on your turn. When your rage ends, you suffer one level of exhaustion.
+
+\subsection{Monk}
+
+\subsubsection{Martial Arts}
+This section amends the Martial Arts column of the Monk table (PH, 77).
+
+Your martial arts die starts as 1d4. It increases to 1d6 at 5th level, 1d8 at 9th level, 1d10 at 13th level, and 1d12 at 17th level.
+
+\subsubsection{Stunning Strike}
+This section replaces Stunning Strike (PH, 79).
+
+Starting at 5th level, you can interfere with the flow of ki in an opponent's body. You can expend one use of this feature on your turn to select a creature you can see. Until the end of your turn, all your melee weapon attacks against that creature are stunning strikes. If a stunning strike hits a creature, it must succeed on a Constitution saving throw or be stunned until the end of your next turn. You can use this feature a number of times equal to your Wisdom modifier (minimum of 1). When you finish a long rest, you regain all expended uses.
+
+\subsection{Ranger}
+\label{classRanger}
+
+You may choose one of these three variations:
+
+\begin{itemize}
+    \item Ranger (PH, 89)
+    \item Revised Ranger (UARR, 1)
+    \item Variant Ranger (see below)
+\end{itemize}
+
+A Variant Ranger is a Player's Handbook Ranger amended with these features from Unearthed Arcana (UACV, 7-9):
+
+\begin{itemize}
+    \item Deft Explorer
+    \item Favored Foe
+    \item Fighting Style Options
+    \item Ranger Spells
+    \item Spellcasting Focus
+    \item Primal Awareness
+    \item Fade Away
+    \item Ranger Companion Options
+\end{itemize}
+
+In particular, you should not use the Spell Versatility feature (UACV, 8).
+
+You can also use the new Fighting Styles and the Martial Versatility feature (UACV, 12), but only through Variant Ranger class features.
+
+\subsection{Sorcerer}
+
+\subsubsection{Font of Magic}
+This section amends the Sorcerer's Font of Magic feature (PH, 101).
+
+You can spend sorcery points to \textit{regain} one expended spell slot as a bonus action on your turn, rather than \textit{creating} one.
+
+\subsubsection{Bonus Metamagic}
+At 3rd level, you can learn either the Distant Spell or Extended Spell metamagic options (PH, 102), in addition to the two you normally choose at this level.
+
+\subsubsection{Wild Magic Surge}
+This row replaces the corresponding row on the Wild Magic Surge table (PH, 104).
+
+\begin{DndTable}[]{lX}
+    \textbf{d100} & \textbf{Effect} \\
+    27-28 & For the next minute, all your spells with a casting time of 1 action can also be cast using 1 bonus action.
+\end{DndTable}
+
+\subsection{Warlock}
+
+You can use Intelligence-based warlocks. All your class features based on Charisma, including your Charisma saving throw proficiency, change to use Intelligence instead.
+
+Additionally, Intelligence and Charisma are both considered warlock spellcasting abilities, for the purposes of features like the Magic Initiate feat.
+
+You cannot multiclass with an Intelligence-based Hexblade Warlock.
+
+\subsection{Wizard}
+
+\subsubsection{Portent}
+This section amends the School of Divination's Portent feature.
+
+After you have used your Portent feature to replace a roll, that roll can no longer be rerolled or replaced by any feature, including Portent.
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% BACKGROUNDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Backgrounds}
+You can customise your background by selecting:
+
+\begin{itemize}
+    \item any two skills,
+    \item a total of two languages or tool proficiencies,
+    \item one feature from any background.
+\end{itemize}
+
+If you customise your background, your background equipment is a set of clothes appropriate to your background, and an empty coin pouch.
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% FEATS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Feats}
+The optional feat rules from the Player's Handbook (PH, 165) are in use.
+
+\subsection{Changes to Prerequisites}
+
+\paragraph{Grappler} (PH, 167) You no longer need a Strength score of 13 or higher.
+
+\paragraph{Ritual Caster} (PH, 169) You no longer need an Intelligence or Wisdom score of 13 or higher.
+
+\paragraph{Magic Initiate, Ritual Caster, Spell Sniper} (PH, 168-170) You need 11 points or more in the spellcasting ability you choose.
+
+\subsection{Spellcasting Feats}
+
+\subsubsection{Minimum Level}
+When you take a feat that grants the ability to cast a spell, you cannot cast it using the feat until you reach the level at which a full caster would normally be able to cast the spell.
+
+For example, you cannot cast Dispel Magic using the Drow High Magic feat until you reach 5th level.
+
+\subsubsection{Learning Spells}
+Ignore any wording in feats that says you learn a spell. This overrules Sage Advice (SA2.4, 8).
+
+For example, if you take the Magic Initiate feat, you can cast the chosen 1st level spell once per long rest, but you do not learn that spell, and consequently cannot cast it using spell slots.
+
+\DndFeatHeader{Feat: Lucky}[Replaces Lucky (PH, 167)]
+You have 3 luck points. Whenever an attack roll is made against you, or whenever you make an attack roll, an ability check, or a saving throw, you can spend one luck point to roll an additional d20. \textit{You can choose to replace one d20 from the original roll with this new d20 roll.} You can do this after the roll, but only before the outcome is determined.
+
+If more than one creature spends a luck point to influence the outcome of a roll, the points cancel out; no additional dice are rolled.
+
+You regain your expended luck points when you finish a long rest.
+
+See also Sage Advice (SA2.4, 8).
+
+\subsection{Bonus Feats}
+At character levels 1, 4, 8, 12, 16 and 19, you can take a bonus feat from the Bonus Feats (Single) table, or a pair of feats from the Bonus Feats (Pair) table. You do not benefit from ability score increases from feats taken in this way.
+
+\begin{figure}[htbp]
+\begin{DndTable}[header=Bonus Feats (Single)]{ll}
+    \textbf{Feat} & \textbf{Prerequisite} \\
+    Actor & - \\
+    Bountiful Luck & Halfling \\
+    Charger & - \\
+    Drow High Magic & Drow \\
+    Dungeon Delver & - \\
+    Durable & - \\
+    Elemental Adept & Spells \\
+    Fade Away & Gnome \\
+    Fey Teleportation & High Elf \\
+    Healer & - \\
+    Keen Mind & - \\
+    Mage Slayer & - \\
+    Magic Initiate & Casting ability 11+ \\
+    Martial Adept & - \\
+    Mounted Combatant & - \\
+    Orcish Fury & Half-Orc \\
+    Prodigy & Human / Half-Elf / Half-Orc \\
+    Ritual Caster & Casting ability 11+ \\
+    Second Chance & Halfling \\
+    Skilled & - \\
+    Skulker & Dexterity 13+ \\
+    Spell Sniper & Spells, Casting ability 11+ \\
+    Squat Nimbleness & Dwarf or Small race \\
+    Svirfneblin Magic & Deep Gnome \\
+    Wood Elf Magic & Wood Elf
+\end{DndTable}
+
+\begin{DndTable}[header=Bonus Feats (Pair)]{lll}
+    \textbf{Feat A} & \textbf{Feat B} & \textbf{Prerequisite} \\
+    Athlete & Weapon Master & - \\
+    Dragon Fear & Dragon Hide & Dragonborn \\
+    Durable & Dwarven Fortitude & Dwarf \\
+    Flames of Phlegethos & Infernal Constitution & Tiefling \\
+    Grappler & Tavern Brawler & - \\
+    Linguist & Observant & -
+\end{DndTable}
+\end{figure}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% COMBAT
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Combat}
+
+\subsection{Actions}
+When you take your action on your turn in combat, you can take an action from the Actions in Combat table, take an action from a feature you have, or improvise an action.
+
+You should not use the Mark action from the Dungeon Master's Guide (DMG, 271).
+
+\begin{figure}[htbp]
+\begin{DndTable}[header=Actions in Combat]{ll}
+\textbf{Action} & \textbf{Source} \\
+Attack & PH, 192 \\
+Cast a Spell & PH, 192 \\
+Climb onto a Bigger Creature & DMG, 271 \\
+Dash & PH, 192 \\
+Disarm & DMG, 271 \\
+Disengage & PH, 192 \\
+Dodge & PH, 192 \\
+Help & PH, 192 \\
+Hide & PH, 192 \\
+Interact with an Object & PH, 190 \\
+Overrun & DMG, 272 \\
+Ready & PH, 193 \\
+Search & PH, 193 \\
+Shove Aside & DMG, 272 \\
+Take a Bonus Action & pg.\pageref{takeABonusAction} \\
+Tumble & DMG, 272 \\
+Use an Object & PH, 193 \\
+\end{DndTable}
+\end{figure}
+
+\subsection{Action: Take a Bonus Action}
+\label{takeABonusAction}
+You can use your action to take a bonus action, but you cannot take bonus actions from the same feature more than once in a turn. This overrules Sage Advice (SA2.4, 10).
+
+For example, you can use your action to cast Healing Word as a bonus action, and then use your regular bonus action to attack with a Spiritual Weapon. However, you may not attack twice with a Spiritual Weapon because this uses two bonus actions from the same spell, even if you attack with two separate castings of the spell, or if one bonus action was used to attack with an existing Spiritual Weapon while the second bonus action was to cast a new Spiritual Weapon.
+
+The rules on bonus action casting (PH, 202) remain in effect.
+
+\subsection{Cover}
+Ranged attacks through a Medium-sized doorway or similar structure have half cover unless the attacker is within 5 feet of the doorway.
+
+Ranged attacks through an arrowslit or similar structure have three-quarters cover unless the attacker is within 5 feet of the arrowslit.
+
+\subsection{Falling Unconscious}
+This section replaces Falling Unconscious (PH, 197).
+
+If damage reduces you to 0 hit points and fails to kill you, you fall unconscious \textit{and gain one level of exhaustion}. The unconsciousness ends if you regain any hit points.
+
+\subsection{Flanking}
+Flanking occurs when hostiles are positioned around a creature in a way that overwhelms its ability to defend itself from multiple directions. The creature must be aware of the hostiles to be flanked.
+
+For example, a Medium-sized humanoid might be flanked by two hostiles standing on opposite sides of it. However, creatures like a beholder who possess wider fields of view may be harder to flank. Larger creatures, or creatures who have means to handle groups of enemies, may also be harder to flank. In such cases, better positioning or additional hostiles may be required, as determined by the DM.
+
+When an unflanked creature makes an attack on a flanked creature, the attack is made with advantage.
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% SPELLCASTING
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Spellcasting}
+
+\subsubsection{Targeting}
+Spells that target creatures can also target objects where reasonable, as determined by the DM. This overrules Sage Advice (SA2.4, 13).
+
+\subsubsection{Wish}
+When Wish is used to duplicate a lower-levelled spell, the duplicated spell is cast as a 9th level spell.
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% MISCELLANEOUS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Miscellaneous}
+
+\subsubsection{Help}
+If you take the Help action to assist with an ability check in which you are not proficient, you must succeed on a DC10 check of the same type as part of your Help action. If you fail, your Help action has no effect.
+
+\subsubsection{Improvised Weapons}
+You can use an object as an improvised weapon in a combat only if no creature has used it as a weapon before initiative was rolled for the same combat. Improvised weapons have the statistics of the most similar simple weapon, as determined by the DM.
+
+\subsubsection{Instant Advantage}
+The use of Tides of Chaos, inspiration and similar features which instantly grant advantage on a roll must be declared before the roll.
+
+Alternatively, you can use these features after seeing a roll (but before knowing the outcome) to reroll one die in the original roll, and you must take the new roll.
+
+\subsubsection{Telepathy}
+Speaking with a creature telepathically does not give it the ability to reply telepathically. This has precedent in Sage Advice (SA2.4, 6).
+
+A creature receiving telepathic speech is aware that the speech is telepathic.
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% HOMEBREW
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{Homebrew}
+
+\section{Items}
+\DndItemHeader{Bag of Many Goats}{Wondrous item, Major, Rare}
+This ordinary bag, made from leather, appears empty. Reaching inside the bag, however, reveals the presence of a small curved horn.
+
+As an action, you can expend a number of charges to pull the horn from the bag and throw it up to 20 feet. When the horn lands, it transforms into a magical goat, which vanishes at dawn or when it is reduced to 0 hit points.
+
+The statistics of the goat are determined by the number of charges expended:
+
+\begin{DndTable}[]{ccc}
+    \textbf{Charges} & \textbf{Goat Size} & \textbf{Goat Speed} \\
+    1 & Tiny & 15 feet \\
+    1 & Small & 30 feet \\
+    2 & Medium & 40 feet \\
+    4 & Large & 40 feet
+\end{DndTable}
+
+The bag has a maximum of 4 charges, and regains 1d4 charges at dawn. If you try to expend more charges than there are charges remaining, your action is wasted.
+
+The goats have normal vision. The goat's statistics other than speed and vision are the same as an \textbf{animated object} (PH, 213) of the same size.
+
+The goats take their turn immediately after you. As a bonus action, you can command one goat verbally. You decide what action the goat will take and where it will move in its next turn. If you issue no command, the creature does nothing.
+
+\DndItemHeader{Potion of Restfulness}{Potion, Minor, Uncommon}
+As an action, a creature can drink this potion, immediately falling unconscious for 10 minutes. The creature wakes up if it takes any damage, or if another creature uses an action to shake it awake. If the creature remains unconscious for the entire duration, it then awakens and gains the benefit of a short rest.
+
+\end{document}
