@@ -21,6 +21,7 @@
 \usepackage{listings}
 \usepackage{shortvrb}
 \usepackage{stfloats}
+\usepackage{subfiles}
 
 \MakeShortVerb{|}
 
@@ -395,100 +396,11 @@ A creature receiving telepathic speech is aware that the speech is telepathic.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % PLAYTEST
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\chapter{Playtest}
-This material can be used but may require balancing during gameplay. After some time these features may be added to the core house rules.
-
-\section{Additional Sources}
-
-\begin{DndTable}[header=Unearthed Arcana]{lX}
-    \textbf{Document} & \textbf{Sections} \\
-    Class Feature Variants (UACV) & Ranger only (see pg.\pageref{classRanger}) \\
-\end{DndTable}
-
-\section{Global}
-
-
-
-
-\section{Races}
-
-\subsection{Human}
-
-You gain these traits in addition to your base traits (PH, 31). You should not use variant humans.
-
-\subparagraph{Versatile} You gain proficiency in one skill, one tool, one simple weapon, and one martial weapon of your choice.
-\subparagraph{Talented} You can double your proficiency bonus in one skill from your class list in which you are proficient.
-
-
-
-
-\section{Classes}
-
-\subsection{Barbarian}
-
-\subsubsection{Frenzy}
-\textit{Replaces Beserker's Frenzy (PH, 49).}
-
-Starting when you choose this path at 3rd level, you can go into a frenzy when you rage. If you do so, for the duration of your rage you can attack one additional time whenever you take the Attack action on your turn. When your rage ends, you suffer one level of exhaustion.
-
-\subsection{Monk}
-\subsubsection{Stunning Strike}
-\textit{Replaces Stunning Strike (PH, 79).}
-
-Starting at 5th level, you can expend one use of this feature on your turn to select a creature you can see. Until the end of your turn, all your melee weapon attacks against that creature are stunning strikes. If a stunning strike hits a creature, it must succeed on a Constitution saving throw or be stunned until the end of your next turn. You can use this feature a number of times equal to your Wisdom modifier (minimum of 1). When you finish a long rest, you regain all expended uses.
-
-\subsection{Ranger}
-You may instead choose one of these variations:
-\begin{itemize}
-    \item Variant Ranger (see below)
-\end{itemize}
-
-A Variant Ranger is an Original Ranger amended with these features from Unearthed Arcana (UACV, 7-9):
-
-\begin{itemize}
-    \item Deft Explorer
-    \item Favored Foe
-    \item Fighting Style Options
-    \item Ranger Spells
-    \item Spellcasting Focus
-    \item Primal Awareness
-    \item Fade Away
-    \item Ranger Companion Options
-\end{itemize}
-
-In particular, you should not use the Spell Versatility feature (UACV, 8).
-
-You can also use the new Fighting Styles and the Martial Versatility feature (UACV, 12), but only through Variant Ranger class features.
-
+\subfile{Playtest}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % HOMEBREW
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\chapter{Homebrew}
-%
-%\section{Items}
-%\DndItemHeader{Bag of Many Goats}{Wondrous item, Major, Rare}
-%This ordinary bag, made from leather, appears empty. Reaching inside the bag, however, reveals the presence of a small curved horn.
-%
-%As an action, you can expend a number of charges to pull the horn from the bag and throw it up to 20 feet. When the horn lands, it transforms into a magical goat, which vanishes at dawn or when it is reduced to 0 hit points.
-%
-%The statistics of the goat are determined by the number of charges expended:
-%
-%\begin{DndTable}[]{ccc}
-%    \textbf{Charges} & \textbf{Goat Size} & \textbf{Goat Speed} \\
-%    1 & Tiny & 15 feet \\
-%    1 & Small & 30 feet \\
-%    2 & Medium & 40 feet \\
-%    4 & Large & 40 feet
-%\end{DndTable}
-%
-%The bag has a maximum of 4 charges, and regains 1d4 charges at dawn. If you try to expend more charges than there are charges remaining, your action is wasted.
-%
-%The goats have normal vision. The goat's statistics other than speed and vision are the same as an \textbf{animated object} (PH, 213) of the same size.
-%
-%The goats take their turn immediately after you. As a bonus action, you can command one goat verbally. You decide what action the goat will take and where it will move in its next turn. If you issue no command, the creature does nothing.
-%
-%\DndItemHeader{Potion of Restfulness}{Potion, Minor, Uncommon}
-%As an action, a creature can drink this potion, immediately falling unconscious for 10 minutes. The creature wakes up if it takes any damage, or if another creature uses an action to shake it awake. If the creature remains unconscious for the entire duration, it then awakens and gains the benefit of a short rest.
+%subfile{Homebrew}
 
 \end{document}
