@@ -26,8 +26,8 @@ This section covers rules relevant to all characters. This is the only section t
     Xanathar's Guide to Everything (XGE) & All \\
 \end{DndTable}
 
-\begin{DndTable}[header=Unearthed Arcana]{lX}
-    \textbf{Document} & \textbf{Sections} \\
+\begin{DndTable}[]{lX}
+    \textbf{Unearthed Arcana} & \textbf{Sections} \\
     The Ranger, Revised (UARR) & All \\
 \end{DndTable}
 
@@ -60,7 +60,7 @@ You can use the optional rules for proficiency dice (DMG, 263).
 % CLASSES
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Classes}
-The optional multiclassing rules from the Player's Handbook (PH, 163) are in use.
+Multiclassing (PH, 163) can be used.
 
 
 
@@ -69,7 +69,7 @@ The optional multiclassing rules from the Player's Handbook (PH, 163) are in use
 % FEATS
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Feats}
-The optional feat rules from the Player's Handbook (PH, 165) are in use.
+Feats (PH, 165) can be used.
 
 \subsection{Spellcasting Feats}
 
@@ -84,9 +84,12 @@ If you take the Magic Initiate feat, you can cast the chosen 1st level spell onc
 \end{DndComment}
 
 \subsection{Bonus Feats}
-At character levels 1, 4, 8, 12, 16 and 19, you can take a bonus feat from the Bonus Feats (Single) table, or a pair of feats from the Bonus Feats (Pair) table. You do not benefit from ability score increases from feats taken in this way.
+At character levels 1, 4, 8, 12, 16 and 19, you can take a bonus feat from the Bonus Feats (Single) table (pg.\pageref{bonusFeatsSingleTable}), or a pair of feats from the Bonus Feats (Pair) table (pg.\pageref{bonusFeatsPairTable}). 
+
+You do not benefit from ability score increases from feats taken as a bonus feat.
 
 \begin{figure}[htbp]
+\label{bonusFeatsSingleTable}
 \begin{DndTable}[header=Bonus Feats (Single)]{ll}
     \textbf{Feat} & \textbf{Prerequisite} \\
     Actor & - \\
@@ -116,6 +119,7 @@ At character levels 1, 4, 8, 12, 16 and 19, you can take a bonus feat from the B
     Wood Elf Magic & Wood Elf
 \end{DndTable}
 
+\label{bonusFeatsPairTable}
 \begin{DndTable}[header=Bonus Feats (Pair)]{lll}
     \textbf{Feat A} & \textbf{Feat B} & \textbf{Prerequisite} \\
     Athlete & Weapon Master & - \\
@@ -135,6 +139,7 @@ At character levels 1, 4, 8, 12, 16 and 19, you can take a bonus feat from the B
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{figure}[htbp]
+\label{actionsInCombatTable}
 \begin{DndTable}[header=Actions in Combat]{ll}
 \textbf{Action} & \textbf{Source} \\
 Attack & PH, 192 \\
@@ -160,9 +165,8 @@ Use an Object & PH, 193 \\
 \section{Combat}
 
 \subsection{Actions}
-Standard actions are listed in the Actions in Combat table. 
+Standard actions are exhaustively listed in the Actions in Combat table (pg.\pageref{actionsInCombatTable}). In particular, you should not use the Mark action (DMG, 271). You may also use an action from a feature or item you possess, or improvise an action.
 
-In particular, you should not use the Mark action (DMG, 271).
 
 \subsection{Action: Use a Bonus Action}
 \label{useABonusAction}
@@ -195,9 +199,6 @@ If damage reduces you to 0 hit points and fails to kill you, you fall unconsciou
 \textit{Replaces Casting Time: Bonus Action (PH, 202).}
 
 If you use a bonus action to cast a spell, you can't cast another spell during the same turn, except for a cantrip with a casting time of 1 action.
-
-\subsubsection{Identifying Spells}
-Once per turn, you can perform a DC 10 + spell level Intelligence (Arcana) check to identify a spell being cast. The DC is 15 + spell level if the spell is not on one of your class lists.
 
 \subsubsection{Targeting}
 Spells that target creatures can also target objects where reasonable, as determined by the DM. This overrules Sage Advice (SA2.4, 13).
