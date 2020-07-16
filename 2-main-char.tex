@@ -1,7 +1,16 @@
 \documentclass[House_Rules.tex]{subfiles}
+
+% set page number if compiling sub file
+\ifcsname preamble@file\endcsname
+  \externaldocument[main-]{House_Rules}
+  \setcounter{page}{\getpagerefnumber{main-chapter2}}
+\fi
+
+
 \begin{document}
 
 \chapter{Character Options}
+\label{chapter2}
 
 This section covers more specific changes that are less universally relevant. 
 
@@ -125,6 +134,7 @@ After you have used your Portent feature to replace a roll, that roll can no lon
 % FEATS
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Feats}
+\label{feats}
 
 \subsection{Changes to Prerequisites}
 
@@ -134,12 +144,28 @@ After you have used your Portent feature to replace a roll, that roll can no lon
 
 \paragraph{Magic Initiate, Ritual Caster, Spell Sniper} (PH, 168-170) You need 11 points or more in the spellcasting ability you choose.
 
-\subsection{GWM and Sharpshooter}
+
+\subsection{Spellcasting Feats}
+
+\subsubsection{Minimum Level}
+When you take a feat that grants the ability to cast a spell, you cannot cast it using the feat until you reach the level at which a full caster would normally be able to cast the spell.
+
+\subsubsection{Learning Spells}
+Ignore any wording in feats that says you learn a spell. This overrules Sage Advice (SA2.4, 8).
+
+\begin{DndComment}{Example}
+If you take the Magic Initiate feat, you can cast the chosen 1st level spell once per long rest, but you do not learn that spell, and consequently cannot cast it using spell slots.
+\end{DndComment}
+
+
+
+\subsection{Changes to Feats}
+\subsubsection{GWM and Sharpshooter}
 \textit{Amends Great Weapon Master (PH, 167) and Sharpshooter (PH, 170).}
 
 The final benefits of these feats instead offer the option of a penalty equal to your proficiency bonus to attacks, in exchange for adding twice your proficiency bonus to the damage.
 
-\subsection{Lucky}
+\subsubsection{Lucky}
 \textit{Amends Lucky (PH, 167).}
 
 When you use a luck point, roll one additional d20. You can choose to replace one d20 from the original roll with this new d20 roll.

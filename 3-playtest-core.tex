@@ -1,7 +1,16 @@
 \documentclass[House_Rules.tex]{subfiles}
+
+% set page number if compiling sub file
+\ifcsname preamble@file\endcsname
+  \externaldocument[main-]{House_Rules}
+  \setcounter{page}{\getpagerefnumber{main-chapter3}}
+\fi
+
+
 \begin{document}
 
 \chapter{Playtest Rules}
+\label{chapter3}
 These are proposed changes to the core rules. They may be used on a session-by-session basis for playtesting purposes. 
 
 After sufficient playtesting, features here may be added to the core rules.

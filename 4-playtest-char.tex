@@ -1,7 +1,16 @@
 \documentclass[House_Rules.tex]{subfiles}
+
+% set page number if compiling sub file
+\ifcsname preamble@file\endcsname
+  \externaldocument[main-]{House_Rules}
+  \setcounter{page}{\getpagerefnumber{main-chapter4}}
+\fi
+
+
 \begin{document}
 
 \chapter{Playtest Chr. Options}
+\label{chapter4}
 
 You can choose to use this material for your character. However, further balancing changes may be required. 
 

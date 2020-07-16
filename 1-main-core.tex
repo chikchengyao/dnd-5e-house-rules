@@ -1,7 +1,16 @@
 \documentclass[House_Rules.tex]{subfiles}
+
+% set page number if compiling sub file
+\ifcsname preamble@file\endcsname
+  \externaldocument[main-]{House_Rules}
+  \setcounter{page}{\getpagerefnumber{main-chapter1}}
+\fi
+
+
 \begin{document}
 
 \chapter{Core Rules}
+\label{chapter1}
 
 This section covers rules relevant to all characters. This is the only section that you \textit{must} read.
 
@@ -66,17 +75,7 @@ Multiclassing (PH, 163) can be used.
 \section{Feats}
 Feats (PH, 165) can be used.
 
-\subsection{Spellcasting Feats}
-
-\subsubsection{Minimum Level}
-When you take a feat that grants the ability to cast a spell, you cannot cast it using the feat until you reach the level at which a full caster would normally be able to cast the spell.
-
-\subsubsection{Learning Spells}
-Ignore any wording in feats that says you learn a spell. This overrules Sage Advice (SA2.4, 8).
-
-\begin{DndComment}{Example}
-If you take the Magic Initiate feat, you can cast the chosen 1st level spell once per long rest, but you do not learn that spell, and consequently cannot cast it using spell slots.
-\end{DndComment}
+There are changes to some feats and their prerequisites. For more details, refer to page \pageref{B-feats}.
 
 \subsection{Bonus Feats}
 At character levels 1, 4, 8, 12, 16 and 19, you can take a feat from the Bonus Feats (Single) table (pg.\pageref{bonusFeatsSingleTable}), or a pair of feats from the Bonus Feats (Pair) table (pg.\pageref{bonusFeatsPairTable}). 
