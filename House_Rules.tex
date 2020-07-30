@@ -1,0 +1,467 @@
+\documentclass[letterpaper,twocolumn,openany,nodeprecatedcode]{dndbook}
+
+% Use babel or polyglossia to automatically redefine macros for terms
+% Armor Class, Level, etc...
+% Default output is in English; captions are located in lib/dndstrings.sty.
+% If no captions exist for a language, English will be used.
+%1. To load a language with babel:
+%	\usepackage[<lang>]{babel}
+%2. To load a language with polyglossia:
+%	\usepackage{polyglossia}
+%	\setdefaultlanguage{<lang>}
+\usepackage[english]{babel}
+%\usepackage[italian]{babel}
+% For further options (multilanguage documents, hypenations, language environments...)
+% please refer to babel/polyglossia's documentation.
+
+\usepackage[utf8]{inputenc}
+\usepackage[singlelinecheck=false]{caption}
+\usepackage{hyperref}
+\usepackage{lipsum}
+\usepackage{listings}
+\usepackage{shortvrb}
+\usepackage{stfloats}
+\usepackage{subfiles}
+
+\MakeShortVerb{|}
+
+%\newcommand{\vsp}{\vspace{3pt}}
+%\newcommand{\vcl}{\vspace{-4pt}}
+
+\lstset{%
+  basicstyle=\ttfamily,
+  language=[LaTeX]{TeX},
+  breaklines=true,
+}
+
+%\setcounter{tocdepth}{2}
+
+
+\begin{document}
+
+\chapter{Overview}
+This set of house rules is intended to give players more meaningful choices when creating and advancing their characters. To that end, options that are so strong as to be considered almost "obligatory" have been rebalanced to more reasonable levels, and some weaker options have been strengthened to become more viable next to their stronger counterparts. The intended end result is that experienced players can have more freedom with different character options, some of which may have had good RP potential but were considered "trap options", while newer players are spared the possibility of accidentally crippling their character through "wrong" choices. 
+
+\subsubsection{Playtest}
+Throughout this document, you may see features labelled as "PLAYTEST". These features are tentative and may require further balancing within a campaign. Please highlight to the DM if you choose these options.
+
+
+\chapter{House Rules}
+
+This section outlines the basic clarifications and rulings common to any game of D\&D.
+
+\begin{DndTable}[header=Sources]{Xl}
+    \textbf{Sourcebook} & \textbf{Sections} \\
+    Dungeon Master's Guide (DMG) & All \\
+    Eberron - Rising from the Last War (ERLW) & All except dragonmarks \\
+    Elemental Evil Player's Companion (EEPC) & All \\
+    Guildmaster's Guide to Ravnica (GGR) & Races, subclasses \\
+    Monster Manual (MM) & All \\
+    Mordenkainen's Tome of Foes (MTF) & All \\
+    Player's Handbook (PH) & All \\
+    Sage Advice Version 2.4 (SA2.4) & All \\
+    Sword Coast Adventurer's Guide (SCAG) & All \\
+    Volo's Guide to Monsters (VGM) & All \\
+    Xanathar's Guide to Everything (XGE) & All \\
+\end{DndTable}
+
+\begin{DndTable}[]{lX}
+    \textbf{Unearthed Arcana} & \textbf{Sections} \\
+    The Ranger, Revised (UARR) & All \\
+\end{DndTable}
+
+The errata (if any) for all sourcebooks is specified in Sage Advice (SA2.4, 1).
+
+Unofficial rulings by Jeremy Crawford are used as guidelines.
+
+\subsection{Ability Scores}
+Use standard 27-point buy (PH, 13) to determine your base ability scores. 
+
+At 1st level, ability scores are capped at 17, after racial bonuses.
+
+\subsection{Hit Points}
+All characters start with slightly more HP. At 1st level, your maximum HP is your hit die size, plus one roll of your hit die, plus your Constitution modifier.
+
+Whenever you roll for maximum HP, you may take the average (rounded up), or roll (rerolling any 1s).
+
+\subsection{Races}
+You may use any of the races in the listed sources, except Dragonmarked variants. A full list can be found here (see citation needed). 
+
+\subsection{Multiclassing}
+Multiclassing (PH, 163) is allowed. 
+
+When multiclassing into or from a Barbarian, Paladin or Ranger, you may use Strength instead of Dexterity (and vice versa) to fulfil the ability score minimum. 
+
+When multiclassing into or from an Intelligence-based Warlock (see citation needed), you may use Intelligence instead of Charisma.
+
+\subsection{Feats}
+Feats (PH, 165) are allowed. 
+
+Characters get bonus feats from a restricted list at certain levels (see citation needed).
+
+\subsection{Actions in Combat}
+Besides the standard actions, you can use actions from the DMG except for the Mark action (DMG, 271). A full list is provided in the Appendix (see citation needed).
+
+\subsection{Diagonal Grid Movement}
+The optional rule on diagonal movement (DMG, 252) is in use: every second diagonal on a turn costs twice as much movement.
+
+Additionally, you have width while moving diagonally. 
+
+\subsection{Cones}
+Conical effects span 60 degrees.
+
+\begin{DndComment}{Example}
+Because you have width, if you take a step northeast you will also pass through the north and the east grid squares. Therefore, you cannot move diagonally if either of those squares are blocked, and you provoke opportunity attacks from both squares.
+\end{DndComment}
+
+\subsection{Inspiration}
+Characters can have up to 3 inspiration points. Each character gains 1 inspiration at the start of a session, and loses all unused inspiration at the end of a session. Inspiration can also be gained through good roleplaying, at the DM's discretion.
+
+Inspiration can be used on an attack roll, ability check or saving throw. You can use it before a roll to gain advantage on it, or after the roll but before the outcome is known, to roll one additional d20 and have the option to replace one d20 from the original roll. You can do both on the same roll.
+
+
+
+
+
+
+\chapter{Gameplay Changes}
+
+\subsection{Bonus Feats}
+At character levels 1, 4, 8, 12, 16 and 19, you can take one feat from the Bonus Feats (Single) table (pg.\pageref{bonusFeatsSingleTable}), or a pair of feats from the Bonus Feats (Pair) table (pg.\pageref{bonusFeatsPairTable}). 
+
+You do not benefit from ability score increases from feats taken in this way.
+
+\begin{figure}[htbp]
+\label{bonusFeatsSingleTable}
+\begin{DndTable}[header=Bonus Feats (Single)]{ll}
+    \textbf{Feat} & \textbf{Prerequisite} \\
+    Actor & - \\
+    Bountiful Luck & Halfling \\
+    Charger & - \\
+    Drow High Magic & Drow \\
+    Dungeon Delver & - \\
+    Durable & - \\
+    Elemental Adept & Spells \\
+    Fade Away & Gnome \\
+    Fey Teleportation & High Elf \\
+    Healer & - \\
+    Keen Mind & - \\
+    Mage Slayer & - \\
+    Magic Initiate & Casting ability 11+ \\
+    Martial Adept & - \\
+    Mounted Combatant & - \\
+    Orcish Fury & Half-Orc \\
+    Prodigy & Human / Half-Elf / Half-Orc \\
+    Ritual Caster & Casting ability 11+ \\
+    Second Chance & Halfling \\
+    Skilled & - \\
+    Skulker & Dexterity 13+ \\
+    Spell Sniper & Spells, Casting ability 11+ \\
+    Squat Nimbleness & Dwarf or Small race \\
+    Svirfneblin Magic & Deep Gnome \\
+    Wood Elf Magic & Wood Elf
+\end{DndTable}
+
+\label{bonusFeatsPairTable}
+\begin{DndTable}[header=Bonus Feats (Pair)]{lll}
+    \textbf{Feat A} & \textbf{Feat B} & \textbf{Prerequisite} \\
+    Athlete & Weapon Master & - \\
+    Dragon Fear & Dragon Hide & Dragonborn \\
+    Durable & Dwarven Fortitude & Dwarf \\
+    Flames of Phlegethos & Infernal Constitution & Tiefling \\
+    Grappler & Tavern Brawler & - \\
+    Linguist & Observant & -
+\end{DndTable}
+\end{figure}
+
+\subsection{Action: Use a Bonus Action}
+
+You can use your action to use a bonus action, but you cannot use bonus actions from the same feature more than once in a turn. This overrules Sage Advice (SA2.4, 10).
+
+The restrictions on bonus action spellcasting still apply to spells cast using this action.
+
+\begin{DndComment}{Example}
+You can use your action to cast Healing Word with a bonus action, and then use your regular bonus action to attack with a Spiritual Weapon. 
+
+However, you may not attack twice with a Spiritual Weapon because this uses two bonus actions from the same spell, even if you attack with two separate castings of the spell, or if one bonus action was used to attack with an existing Spiritual Weapon while the second bonus action was used to cast a new Spiritual Weapon.
+\end{DndComment}
+
+\subsection{Ability Flexibility}
+If your race and subrace together give a +2 and +1 increase to two fixed ability scores, you may choose which receives the +2 bonus.
+
+You can ignore any reduction to an ability score from a racial Ability Score Increase trait.
+
+\begin{DndComment}{Examples}
+High Elves can choose to start with +2 Dexterity and +1 Intelligence, or +1 Dexterity and +2 Intelligence. 
+
+Humans, Mountain Dwarves, and Tritons gain no flexibility because they do not follow the +2/+1 format.
+
+Changelings and Warforged gain no flexibility because their increases are not to fixed ability scores.
+\end{DndComment}
+
+\subsection{Skills}
+You gain additional skill proficiencies equal to your Intelligence modifier (minimum of 0). These must be Intelligence, Wisdom or Charisma skills. Instead of gaining a proficiency, you can choose to double your proficiency bonus in an Intelligence skill you are already proficient in.
+
+\subsection{Help}
+You may help with a skill check only if you have the relevant proficiency.
+
+\subsection{Falling Unconscious}
+If damage reduces you to 0 hit points and fails to kill you, you fall unconscious \textit{and gain one level of exhaustion}.
+
+\subsection{Intelligence Warlocks}
+When you create a 1st level Warlock or multiclass into Warlock, you can choose to be an Intelligence-based Warlock. If you do so, all your Warlock features originally based on Charisma, including your saving throw proficiency, change to use Intelligence instead.
+
+Intelligence and Charisma are both considered warlock spellcasting abilities for the purposes of features like the Magic Initiate feat.
+
+\subsection{Hit Dice and Rests}
+
+\subsubsection{Hit Dice}
+You gain 2 hit dice per class level. 
+
+\subsubsection{Short Rests}
+When you take a short rest, you must expend at least 1 hit die to benefit from the rest, even if you are not missing any hit points.
+
+\subsubsection{Long Rests}
+Long rests no longer automatically restore hit points.
+
+At the end of a long rest, you can choose to spend hit dice like in a short rest. Whether or not you do, you then recover half your expended hit dice, rounded up.
+
+\subsection{Flanking}
+
+A flanked creature suffers a -2 penalty to AC.
+
+A creature is flanked if there are two hostiles within 5 feet of it, where one hostile is occupying a grid square directly opposite another hostile, or is adjacent to such a square. For this purpose, diagonals are not considered adjacent.
+
+\subsubsection{Immunity}
+Certain creatures, such as beholders, are immune, as well as:
+\begin{itemize}
+    \item creatures whose AC does not use their Dexterity modifier
+    \item creatures of size Huge or larger
+\end{itemize}
+
+\begin{DndComment}{Example}
+If a non-immune Medium creature has a hostile 5 feet to its north, it will be flanked if there is also a hostile 5 feet to its southwest, south, or southeast.
+\end{DndComment}
+
+\subsection{Prone Opportunity Attacks}
+Standing from prone provokes an opportunity attack.
+
+
+
+
+
+
+
+
+
+
+
+
+\chapter{Balancing Changes}
+
+\section{Races}
+\subsection{Flying Races} Before 5th level, flying speeds granted by racial traits cannot hold you in the air between turns. Unless you have other means of staying aloft, you fall at the end of your turn.
+
+\subsection{Dragonborn}
+\textit{Amends Breath Weapon (PH, 34).}
+
+\subparagraph{Breath Weapon} Your breath weapon uses a bonus action. Its damage is 2d4 at 1st level, 3d4 at 6th level, 4d4 at 11th level, and 5d4 at 16th level.
+
+\subsection{Human}
+
+You gain these traits in addition to your base traits (PH, 31). You should not use variant humans.
+
+\subparagraph{Versatile} You gain proficiency in one skill, one tool, one simple weapon, and one martial weapon of your choice.
+\subparagraph{Talented} You can double your proficiency bonus in one skill from your class list in which you are proficient.
+
+\subsection{Kobold}
+\textit{Replaces Ability Score Increase (VGM, 119).}
+
+\subparagraph{Ability Score Increase} Your Dexterity score increases by 2, and choose one of Constitution, Intelligence, Wisdom or Charisma to increase by 1.
+
+\section{Classes}
+
+\subsubsection{Frenzy}
+\textit{Replaces Berserker's Frenzy (PH, 49).}
+
+Starting when you choose this path at 3rd level, you can go into a frenzy when you rage. If you do so, for the duration of your rage you can attack one additional time whenever you take the Attack action on your turn. When your rage ends, you suffer one level of exhaustion.
+
+\subsection{Monk}
+
+\subsubsection{Martial Arts}
+\textit{Amends Monk table, Martial Arts column (PH, 77).}
+
+Your Martial Arts die starts as 1d4. It increases to 1d6 at 5th level, 1d8 at 9th level, 1d10 at 13th level, and 1d12 at 17th level.
+
+\subsubsection{Stunning Strike}
+\textit{Replaces Stunning Strike (PH, 79).}
+
+Starting at 5th level, you have one use of this feature and can expend it on your turn to make all your unarmed strikes stunning strikes until the end of that turn. If a stunning strike hits a creature, it must succeed on a Constitution saving throw against your ki save DC or be stunned until the end of your next turn. When you finish a short or long rest, you regain all expended uses. You gain a second use of this feature at 11th level and a third at 17th level. 
+\subsection{Ranger}
+
+You may choose one of these two variations:
+
+\begin{itemize}
+    \item Original Ranger (PH, 89)
+    \item Revised Ranger (UARR, 1)
+    \item Variant Ranger
+\end{itemize}
+
+A Variant Ranger is an Original Ranger amended with these features from Unearthed Arcana: Class Feature Variants (UACV, 7-9):
+
+\begin{itemize}
+    \item Deft Explorer
+    \item Favored Foe
+    \item Spell Versatility
+    \item Ranger Spells
+    \item Spellcasting Focus
+    \item Primal Awareness
+    \item Fade Away
+    \item Ranger Companion Options (for Beast Master subclass)
+\end{itemize}
+
+In particular, you should not use the Fighting Style Options feature (UACV, 7).
+
+
+\subsection{Sorcerer}
+
+\subsubsection{Font of Magic}
+\textit{Amends Font of Magic (PH, 101).}
+
+You spend sorcery points to \textit{regain} one expended spell slot as a bonus action on your turn (rather than \textit{creating} one).
+
+\subsubsection{Extended Spell}
+\textit{Amends Extended Spell (PH, 102).}
+
+You can also extend a spell after it has been cast, but before it has ended. For stacking purposes, it counts as if used when cast.
+
+\subsubsection{Bonus Metamagic}
+At 3rd level, you can learn either the Distant Spell or Extended Spell Metamagic options (PH, 102), in addition to the two you normally choose at this level.
+
+\subsubsection{Wild Magic Surge}
+\textit{Amends Wild Magic Surge table (PH, 104).}
+
+\begin{DndTable}[]{lX}
+    \textbf{d100} & \textbf{Effect} \\
+    27-28 & For the next minute, all your spells with a casting time of 1 action can also be cast using 1 bonus action.
+\end{DndTable}
+
+
+
+
+\section{Feats}
+
+\subsection{Changes to Prerequisites}
+
+\paragraph{Grappler} (PH, 167) You no longer need a Strength score of 13 or higher.
+
+\paragraph{Ritual Caster} (PH, 169) You no longer need an Intelligence or Wisdom score of 13 or higher.
+
+\paragraph{Magic Initiate, Ritual Caster, Spell Sniper} (PH, 168-170) You need 11 points or more in the spellcasting ability you choose.
+
+\subsection{Preclusions}
+You cannot be a Fighter (Battlemaster) and have the Martial Adept feat.
+
+You cannot have levels in the same class in which you have the Magic Initiate feat.
+
+If such a conflict arises, you can swap the feat for another.
+
+\subsection{Spellcasting Feats}
+
+\subsubsection{Minimum Level}
+When you take a feat that grants the ability to cast a spell, you cannot cast it using the feat until you reach the level at which a full caster would normally be able to cast that level of spell.
+
+\subsubsection{Learning Spells}
+Ignore any wording in feats that says you learn a spell. This overrules Sage Advice (SA2.4, 8).
+
+\begin{DndComment}{Example}
+If you take the Magic Initiate feat, you can cast the chosen 1st level spell once per long rest, but you do not learn that spell, and therefore cannot cast it using spell slots.
+\end{DndComment}
+
+
+
+\subsection{Changes to Feats}
+\subsubsection{GWM and Sharpshooter}
+\textit{Amends Great Weapon Master (PH, 167) and Sharpshooter (PH, 170).}
+
+The final benefits of these feats instead offer the option of a penalty equal to your proficiency bonus to attacks, in exchange for adding twice your proficiency bonus to the damage.
+
+\subsubsection{Lucky}
+\textit{Amends Lucky (PH, 167).}
+
+When you use a luck point, roll one additional d20. You can choose to replace one d20 from the original roll with this new d20 roll.
+
+\subsection{Medium Armor Master}
+
+You gain this additional benefit when you take this feat (PH, 168):
+
+\begin{itemize}
+\item Increase your Dexterity score by 1, to a maximum of 20.
+\end{itemize}
+
+
+\section{Spells}
+
+\subsection{Identifying Spells}
+Once per turn, you can use your reaction to perform a DC 10 + spell level Intelligence (Arcana) check to identify a spell being cast. The DC is 15 + spell level if the spell is not on one of your class lists. You must have perceived a verbal or somatic component, or a material component not substituted by an arcane focus. For each additional such component you perceive, you gain a +2 bonus to your check.
+
+Whether you succeed or fail this check, you can choose to cast Counterspell as part of the same reaction.
+
+\subsection{Counterspell}
+You gain a +1 to the ability check for each slot level above 3rd.
+
+\subsection{Dispel Magic}
+You gain a +1 to the ability check for each slot level above 3rd.
+
+
+
+\chapter{Rulings}
+
+\subsubsection{Bonus Action Spells}
+\textit{Replaces Casting Time: Bonus Action (PH, 202).}
+
+If you cast a spell with a casting time of 1 bonus action, you can't cast another spell during the same turn, except for a cantrip with a casting time of 1 action.
+
+\subsubsection{Targeting}
+Spells that target creatures can also target objects where reasonable, as determined by the DM. This overrules Sage Advice (SA2.4, 13).
+
+
+
+\subsubsection{Critical Failure}
+A critical failure occurs when you have disadvantage on an attack roll or ability check and roll two natural 1s. In addition to missing or failing the check, something else happens as determined by the DM. 
+
+
+
+\subsubsection{Improvised Weapons}
+Improvised weapons have the statistics of the most similar simple weapon, as determined by the DM.
+
+An object used as an improvised weapon breaks at the end of combat.
+
+
+\subsubsection{Portent}
+\textit{Amends Portent (PH, 116).}
+
+After you have used your Portent feature to replace a roll, that roll can no longer be rerolled or replaced by any feature, including Portent.
+
+
+\subsection{Identifying Spells}
+While a spell is in the process of being cast, you can identify the spell by succeeding at an Intelligence (Arcana) check with DC 10 plus twice the spell's level. The DC increases by 5 if the spell is not on one of your class lists. You must be able to perceive a verbal or somatic component, or a material component not substituted by an arcane focus. For each such component you perceive, you gain a +1 bonus to your check.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\end{document}
