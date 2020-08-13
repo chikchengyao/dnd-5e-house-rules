@@ -28,6 +28,9 @@
 %\newcommand{\vsp}{\vspace{3pt}}
 %\newcommand{\vcl}{\vspace{-4pt}}
 
+\newcommand{\pg}[1]{pg.\pageref{#1}}
+
+
 \lstset{%
   basicstyle=\ttfamily,
   language=[LaTeX]{TeX},
@@ -37,12 +40,12 @@
 %\setcounter{tocdepth}{2}
 
 \begin{document}
-
-\chapter{Overview}
-This set of house rules is intended to give players more meaningful choices when creating and advancing their characters. To that end, options that are so strong as to be considered almost "obligatory" have been rebalanced to more reasonable levels, and some weaker options have been strengthened to become more viable next to their stronger counterparts. The intended end result is that experienced players can have more freedom with different character options, some of which may have had good RP potential but were considered "trap options", while newer players are spared the possibility of accidentally crippling their character through "wrong" choices. 
-
-\subsubsection{Playtest}
-Throughout this document, you may see features labelled as "PLAYTEST". These features are tentative and may require further balancing within a campaign. Please highlight to the DM if you choose these options.
+%
+%\chapter{Overview}
+%This set of house rules is intended to give players more meaningful choices when creating and advancing their characters. To that end, options that are so strong as to be considered almost "obligatory" have been rebalanced to more reasonable levels, and some weaker options have been strengthened to become more viable next to their stronger counterparts. The intended end result is that experienced players can have more freedom with different character options, some of which may have had good RP potential but were considered "trap options", while newer players are spared the possibility of accidentally crippling their character through "wrong" choices. 
+%
+%\subsubsection{Playtest}
+%Throughout this document, you may see features labelled as "PLAYTEST". These features are tentative and may require further balancing within a campaign. Please highlight to the DM if you choose these options.
 
 
 \chapter{Housekeeping}
@@ -70,131 +73,29 @@ You can use material from these sourcebooks (hyperlinked). Ask before using othe
 \begin{DndTable}[]{lX}
     \textbf{Unearthed Arcana} & \textbf{Sections} \\
     \href{https://media.wizards.com/2016/dnd/downloads/UA_RevisedRanger.pdf}{The Ranger, Revised (UARR)} & All \\
-    \href{https://media.wizards.com/2019/dnd/downloads/UA-ClassFeatures.pdf}{Class Feature Variants (UACF)} & Variant Ranger (see pg.\pageref{balance-class-ranger-variant})
+    \href{https://media.wizards.com/2019/dnd/downloads/UA-ClassFeatures.pdf}{Class Feature Variants (UACF)} & Variant Ranger (see \pg{balance-class-ranger-variant})
 \end{DndTable}
 
-\subsection{Ability Scores}
+\subsection{Base Ability Scores}
 Use standard 27-point buy (PH, 13) to determine your base ability scores. 
 
 At 1st level, ability scores are capped at 17, after racial bonuses.
 
 \subsection{Hit Points}
-All characters start with slightly more HP. At "0th level", your maximum HP is your class' hit die size. At 1st level, increase your HP as if you were levelling up from 0th level.
+The hit point maximum for all characters is slightly increased. 
+
+Characters start with maximum HP equal to their class hit die size. At 1st level, they increase their HP as if they were levelling up from 0th level.
 
 Whenever you roll for maximum HP, you may take the average (rounded up), or roll (rerolling any 1s).
 
 \subsection{Races}
-You may use any of the races in the listed sources, except Dragonmarked variants. A full list can be found in the Appendix (pg.\pageref{appendix-races}). If your chosen race is rare in the campaign's setting, you must have a compelling explanation in your backstory.
+Some races have received balancing changes (see \pg{balance-races}).
 
+A full list of races from the listed sources can be found in the Appendix (\pg{appendix-races}). Dragonmarked race variants should not be used.
 
-\subsection{Backgrounds}
-You can use custom backgrounds. That is, choose any two skill proficiencies, a total of two tool or language proficiencies, one equipment package from any background and one background feature from any background.
+If your chosen race is rare in the campaign's setting, you should have a compelling backstory explaining your character's presence.
 
-
-\subsection{Multiclassing}
-Multiclassing (PH, 163) is allowed. 
-
-When multiclassing into or from a Barbarian, Paladin or Ranger, you may use Strength instead of Dexterity (and vice versa) to fulfil the ability score minimum. 
-
-When multiclassing into or from an Intelligence-based Warlock (see pg.\pageref{gameplay-warlock-int}), you may use Intelligence instead of Charisma.
-
-\subsection{Feats}
-Feats (PH, 165) are allowed. 
-
-Characters get bonus feats from a restricted list at certain levels (see pg.\pageref{gameplay-feats-bonus}).
-
-\subsection{Actions in Combat}
-Besides the standard actions, you can use actions from the DMG except for the Mark action (DMG, 271). A full list is provided in the Appendix (see citation needed).
-
-\subsection{Diagonal Grid Movement}
-The optional rule on diagonal movement (DMG, 252) is in use: every second diagonal on a turn costs twice as much movement.
-
-Additionally, you have width while moving diagonally. 
-
-\subsection{Cones}
-Conical effects span 60 degrees.
-
-\begin{DndComment}{Example}
-Because you have width, if you take a step northeast you will also pass through the north and the east grid squares. Therefore, you cannot move diagonally if either of those squares are blocked, and you provoke opportunity attacks from both squares.
-\end{DndComment}
-
-\subsection{Inspiration}
-The way inspiration works has been changed. 
-
-Every character starts every game session with inspiration. However, in order to use inspiration to benefit a roll, a player must describe or roleplay an exceptional circumstance, clever idea, or other means by which the inspiration affects the roll.
-
-\begin{DndSidebar}{Inspiration}
-Inspiration can be used on any attack roll, ability check or saving throw. You can use it before a roll to impose advantage or disadvantage on it. You can also use it after a roll but before the outcome is known, to roll one additional d20 and have the option to replace one d20 from the original roll. 
-\end{DndSidebar}
-
-
-
-
-
-\chapter{Gameplay Changes}
-
-\label{gameplay-feats-bonus}
-\subsection{Bonus Feats}
-At character levels 1, 4, 8, 12, 16 and 19, you can take one feat from the Bonus Feats (Single) table (pg.\pageref{bonusFeatsSingleTable}), or a pair of feats from the Bonus Feats (Pair) table (pg.\pageref{bonusFeatsPairTable}). 
-
-You do not benefit from ability score increases from feats taken in this way.
-
-\begin{figure}[htbp]
-\label{bonusFeatsSingleTable}
-\begin{DndTable}[header=Bonus Feats (Single)]{ll}
-    \textbf{Feat} & \textbf{Prerequisite} \\
-    Actor & - \\
-    Bountiful Luck & Halfling \\
-    Charger & - \\
-    Drow High Magic & Drow \\
-    Dungeon Delver & - \\
-    Durable & - \\
-    Elemental Adept & Spells \\
-    Fade Away & Gnome \\
-    Fey Teleportation & High Elf \\
-    Healer & - \\
-    Keen Mind & - \\
-    Mage Slayer & - \\
-    Magic Initiate & Casting ability 11+ \\
-    Martial Adept & - \\
-    Mounted Combatant & - \\
-    Orcish Fury & Half-Orc \\
-    Prodigy & Human / Half-Elf / Half-Orc \\
-    Ritual Caster & Casting ability 11+ \\
-    Second Chance & Halfling \\
-    Skilled & - \\
-    Skulker & Dexterity 13+ \\
-    Spell Sniper & Spells, Casting ability 11+ \\
-    Squat Nimbleness & Dwarf or Small race \\
-    Svirfneblin Magic & Deep Gnome \\
-    Wood Elf Magic & Wood Elf
-\end{DndTable}
-
-\label{bonusFeatsPairTable}
-\begin{DndTable}[header=Bonus Feats (Pair)]{lll}
-    \textbf{Feat A} & \textbf{Feat B} & \textbf{Prerequisite} \\
-    Athlete & Weapon Master & - \\
-    Dragon Fear & Dragon Hide & Dragonborn \\
-    Durable & Dwarven Fortitude & Dwarf \\
-    Flames of Phlegethos & Infernal Constitution & Tiefling \\
-    Grappler & Tavern Brawler & - \\
-    Linguist & Observant & -
-\end{DndTable}
-\end{figure}
-
-\subsection{Action: Use a Bonus Action}
-
-You can use your action to use a bonus action, but you cannot use bonus actions from the same feature more than once in a turn. This overrules Sage Advice (SA2.4, 10).
-
-The restrictions on bonus action spellcasting still apply to spells cast using this action.
-
-\begin{DndComment}{Example}
-You can use your action to cast Healing Word with a bonus action, and then use your regular bonus action to attack with a Spiritual Weapon. 
-
-However, you may not attack twice with a Spiritual Weapon because this uses two bonus actions from the same spell, even if you attack with two separate castings of the spell, or if one bonus action was used to attack with an existing Spiritual Weapon while the second bonus action was used to cast a new Spiritual Weapon.
-\end{DndComment}
-
-\subsection{Ability Flexibility}
+\subsubsection{Racial Ability Flexibility}
 If your race and subrace together give a +2 and +1 increase to two fixed ability scores, you may choose which receives the +2 bonus.
 
 You can ignore any reduction to an ability score from a racial Ability Score Increase trait.
@@ -207,33 +108,67 @@ Humans, Mountain Dwarves, and Tritons gain no flexibility because they do not fo
 Changelings and Warforged gain no flexibility because their increases are not to fixed ability scores.
 \end{DndComment}
 
-\subsection{Skills}
-You gain additional skill proficiencies equal to your Intelligence modifier (minimum of 0). These must be Intelligence, Wisdom or Charisma skills. Instead of gaining a proficiency, you can choose to double your proficiency bonus in an Intelligence skill you are already proficient in.
+\subsection{Classes}
+Some classes have received balancing changes (see \pg{balance-classes}). 
 
-\subsection{Help}
-You may help with a skill check only if you have the relevant proficiency.
+\subsubsection{Multiclassing}
+Multiclassing (PH, 163) is allowed. 
+
+When multiclassing into or from a Barbarian, Paladin or Ranger, you may use Strength instead of Dexterity (and vice versa) to fulfil the ability score minimum. 
+
+\subsection{Backgrounds}
+You can use custom backgrounds. Choose any two skill proficiencies, a total of two tool or language proficiencies, one equipment package from any background and one background feature from any background.
+
+\subsection{Feats}
+Feats (PH, 165) are allowed. 
+
+Some feats and their prerequisites have received balancing changes (see \pg{balance-feats}).
+
+Parts of certain feats can also be taken as half-feats (see \pg{balance-feats-subfeats}).
+
+\subsection{Combat Options}
+Besides the standard options, you can use those from the DMG except for the Mark action (DMG, 271). 
+
+A non-exhaustive list of potentially useful combat options is provided in the Appendix (see \pg{appendix-combat-options}).
+
+
+\subsection{Diagonal Grid Movement}
+The optional rule on diagonal movement (DMG, 252) is in use: every second diagonal on a turn costs twice as much movement.
+
+Additionally, you have width while moving diagonally. 
+
+\begin{DndComment}{Example}
+Because you have width, if you take a step northeast you will also pass through the north and the east grid squares. Therefore, you cannot move diagonally if either of those squares are blocked, and you provoke opportunity attacks from both squares.
+\end{DndComment}
+
+
+
+
+
+
+
+\chapter{Gameplay Changes}
+
+These changes depart more radically from the usual rules.
+
+\label{gameplay-bonus-action}
+\subsection{Action: Gain a Bonus Action}
+You can use your action to gain an additional bonus action on your turn, but you cannot use bonus actions from the same feature more than once in a turn. This overrules Sage Advice (SA2.4, 10).
+
+\begin{DndComment}{Example}
+You can use your action to gain a second bonus action, then cast Healing Word with one bonus action and use your remaining bonus action to attack with a Spiritual Weapon. 
+
+However, you may not attack twice with a Spiritual Weapon because this uses two bonus actions from the same spell, even if you attack with two separate castings of the spell, or if one bonus action was used to attack with an existing Spiritual Weapon while the other was used to cast a new Spiritual Weapon.
+\end{DndComment}
+
+\label{gameplay-feats-bonus}
+\subsection{Bonus Feats}
+At character levels 1, 4, 8, 12, 16 and 19, you can take one feat from the Bonus Feats (Single) table, or a pair of feats from the Bonus Feats (Pair) table. Both tables are in the Appendix (\pg{appendix-feats-bonus-table}).
+
+You do not benefit from ability score increases from feats taken in this way.
 
 \subsection{Falling Unconscious}
-If damage reduces you to 0 hit points and fails to kill you, you fall unconscious \textit{and gain one level of exhaustion}.
-
-\label{gameplay-warlock-int}
-\subsection{Intelligence Warlocks}
-When you create a 1st level Warlock or multiclass into Warlock, you can choose to be an Intelligence-based Warlock. If you do so, all your Warlock features originally based on Charisma, including your saving throw proficiency, change to use Intelligence instead.
-
-Intelligence and Charisma are both considered warlock spellcasting abilities for the purposes of features like the Magic Initiate feat.
-
-\subsection{Hit Dice and Rests}
-
-\subsubsection{Hit Dice}
-You gain 2 hit dice per class level. 
-
-\subsubsection{Short Rests}
-When you take a short rest, you must expend at least 1 hit die to benefit from the rest, even if you are not missing any hit points.
-
-\subsubsection{Long Rests}
-Long rests no longer automatically restore hit points.
-
-At the end of a long rest, you can choose to spend hit dice like in a short rest. Whether or not you do, you then recover half your expended hit dice, rounded up.
+If damage reduces you to 0 hit points and fails to kill you, you fall unconscious and gain one level of exhaustion.
 
 \subsection{Flanking}
 
@@ -242,21 +177,61 @@ A flanked creature suffers a -2 penalty to AC.
 A creature is flanked if there are two hostiles within 5 feet of it, where one hostile is occupying a grid square directly opposite another hostile, or is adjacent to such a square. For this purpose, diagonals are not considered adjacent.
 
 \subsubsection{Immunity}
-Certain creatures, such as beholders, are immune, as well as:
+Creatures fulfilling any of these criteria are immune to flanking:
 \begin{itemize}
-    \item creatures whose AC does not use their Dexterity modifier
-    \item creatures of size Huge or larger
+    \item their AC does not use their Dexterity modifier
+    \item they are Huge or larger
 \end{itemize}
+Other creatures may also be immune, at the DM's discretion. Typically, these are creatures that are able to keep track of many opponents, or who are not hindered by such.
 
 \begin{DndComment}{Example}
 If a non-immune Medium creature has a hostile 5 feet to its north, it will be flanked if there is also a hostile 5 feet to its southwest, south, or southeast.
 \end{DndComment}
 
+\subsection{Help}
+You may help with a skill check only if you have the relevant proficiency.
+
+\subsection{Hit Dice and Rests}
+\subsubsection{Hit Dice}
+You gain 2 hit dice per class level, instead of 1.
+
+\subsubsection{Short Rests}
+When you take a short rest, you must spend at least 1 hit die to benefit from the rest, even if you are not missing any hit points.
+
+\subsubsection{Long Rests}
+Long rests no longer automatically restore hit points.
+
+Just before you finish a long rest, you can choose to spend hit dice like in a short rest. Whether or not you do, you then finish the rest, and recover half your expended hit dice, rounded up.
+
+\subsection{Identifying Spells}
+You can use your reaction to perform an Intelligence (Arcana) check to identify a spell as it is being cast. You must perceive a verbal or somatic component, or a material component not substituted by an arcane focus. For each such component you perceive, you gain a +2 bonus to your check.
+
+The DC of this check is 15 + twice the spell's level. The DC decreases by 5 if the spell is on one of your class lists. 
+
+Whether you succeed or fail this check, you can choose to cast Counterspell as part of the same reaction.
+
+\subsection{Inspiration}
+Inspiration has been completely reworked.
+
+Every character starts every game session with inspiration. This is the only way to gain inspiration. In order to use inspiration to benefit a roll, a player must describe or roleplay an exceptional circumstance, clever idea, or other means by which the inspiration affects the roll, which must be non-trivially related to that character's backstory.
+
+Inspiration is used on any attack roll, ability check or saving throw. You can use it before a roll to impose advantage or disadvantage on it. You can also use it after a roll but before the outcome is known, to roll one additional d20 and have the option to replace one d20 from the original roll. 
+
+\subsection{Intelligence Proficiencies}
+You gain additional skill proficiencies equal to your Intelligence modifier (minimum of 0). These must be Intelligence, Wisdom or Charisma skills. 
+
+Instead of gaining a proficiency, you can choose to double your proficiency bonus in an Intelligence skill you are already proficient in.
+
+\label{gameplay-warlock-int}
+\subsection{Intelligence-based Warlocks}
+When you create a 1st level Warlock or multiclass into Warlock, you can choose to be an Intelligence-based Warlock. If you do so, all your Warlock features originally based on Charisma, including your saving throw proficiency, change to use Intelligence instead.
+
+Intelligence and Charisma are both considered warlock spellcasting abilities for the purposes of features like the Magic Initiate feat.
+
+When multiclassing into or from an Intelligence-based Warlock, you must use Intelligence instead of Charisma.
+
 \subsection{Prone Opportunity Attacks}
-Standing from prone provokes an opportunity attack.
-
-
-
+Standing from prone provokes an opportunity attack. Taking the Disengage action avoids this.
 
 
 
@@ -268,6 +243,7 @@ Standing from prone provokes an opportunity attack.
 
 \chapter{Balancing Changes}
 
+\label{balance-races}
 \section{Races}
 \label{balance-race-flying}
 \subsection{Flying Races} Before 5th level, flying speeds granted by racial traits cannot hold you in the air between turns. Unless you have other means of staying aloft, you fall at the end of your turn.
@@ -276,7 +252,7 @@ Standing from prone provokes an opportunity attack.
 \subsection{Dragonborn}
 \textit{Amends Breath Weapon (PH, 34).}
 
-\subparagraph{Breath Weapon} Your breath weapon uses a bonus action. Its damage is 2d4 at 1st level, 3d4 at 6th level, 4d4 at 11th level, and 5d4 at 16th level.
+\subparagraph{Breath Weapon} Your breath weapon uses a bonus action instead of an action. However, its damage is reduced slightly to 2d4 at 1st level, 3d4 at 6th level, 4d4 at 11th level, and 5d4 at 16th level.
 
 \label{balance-race-human}
 \subsection{Human}
@@ -296,8 +272,10 @@ You gain these traits in addition to your base traits (PH, 31). You should not u
 \subsection{Yuan-ti Pureblood}
 tbd
 
+\label{balance-classes}
 \section{Classes}
 
+\subsection{Barbarian}
 \subsubsection{Frenzy}
 \textit{Replaces Berserker's Frenzy (PH, 49).}
 
@@ -314,9 +292,19 @@ Your Martial Arts die starts as 1d4. It increases to 1d6 at 5th level, 1d8 at 9t
 \textit{Replaces Stunning Strike (PH, 79).}
 
 Starting at 5th level, you have one use of this feature and can expend it on your turn to make all your unarmed strikes stunning strikes until the end of that turn. If a stunning strike hits a creature, it must succeed on a Constitution saving throw against your ki save DC or be stunned until the end of your next turn. When you finish a short or long rest, you regain all expended uses. You gain a second use of this feature at 11th level and a third at 17th level. 
+
+\subsubsection{Way of the Four Elements}
+\textit{Amends Way of the Four Elements (PH, 80).}
+
+You learn to infuse yourself with elemental energy. You gain an additional pool of ki points equal to half your level (rounded down). These ki points can only be spent on your elemental disciplines.
+
+When you gain this subclass, you know the Elemental Attunement discipline and two other elemental disciplines of your choice, rather than one. You learn two additional elemental disciplines of your choice, rather than one, at 6th, 11th and 17th level.
+
+Whenever you gain a level in this class, you can replace one elemental discipline you know with a different discipline.
+
 \subsection{Ranger}
 
-You may choose one of these two variations:
+You may use one of these three variations of the Ranger class. Subclasses are applied as usual on any of them.
 
 \begin{itemize}
     \item Original Ranger (PH, 89)
@@ -346,7 +334,7 @@ In particular, you should not use the Fighting Style Options feature (UACF, 7).
 \subsubsection{Font of Magic}
 \textit{Amends Font of Magic (PH, 101).}
 
-You spend sorcery points to \textit{regain} one expended spell slot as a bonus action on your turn (rather than \textit{creating} one).
+You spend sorcery points to regain one expended spell slot as a bonus action on your turn, rather than creating one.
 
 \subsubsection{Extended Spell}
 \textit{Amends Extended Spell (PH, 102).}
@@ -354,7 +342,15 @@ You spend sorcery points to \textit{regain} one expended spell slot as a bonus a
 You can also extend a spell after it has been cast, but before it has ended. For stacking purposes, it counts as if used when cast.
 
 \subsubsection{Bonus Metamagic}
-At 3rd level, you can learn either the Distant Spell or Extended Spell Metamagic options (PH, 102), in addition to the two you normally choose at this level.
+At 3rd level, in addition to the two metamagic options you normally learn, you can learn one more from this list:
+
+\begin{itemize}
+\item Careful Spell
+\item Distant Spell 
+\item Extended Spell
+\end{itemize}
+
+At 10th level, you learn a second metamagic option from this list. At 17th level, you learn the last metamagic option from this list.
 
 \subsubsection{Wild Magic Surge}
 \textit{Amends Wild Magic Surge table (PH, 104).}
@@ -366,7 +362,7 @@ At 3rd level, you can learn either the Distant Spell or Extended Spell Metamagic
 
 
 
-
+\label{balance-feats}
 \section{Feats}
 
 \subsection{Changes to Prerequisites}
@@ -382,7 +378,7 @@ You cannot be a Fighter (Battlemaster) and have the Martial Adept feat.
 
 You cannot have levels in the same class in which you have the Magic Initiate feat.
 
-If such a conflict arises, you can swap the feat for another.
+If such a conflict arises, you can swap the conflicting feat for another, or change the class of your Magic Initiate feat.
 
 \subsection{Spellcasting Feats}
 
@@ -396,34 +392,44 @@ Ignore any wording in feats that says you learn a spell. This overrules Sage Adv
 If you take the Magic Initiate feat, you can cast the chosen 1st level spell once per long rest, but you do not learn that spell, and therefore cannot cast it using spell slots.
 \end{DndComment}
 
-
+\subsection{Removed Feats}
+Lucky (PH, 167) and Savage Attacker (PH, 169) cannot be used.
 
 \subsection{Changes to Feats}
+
+\subsubsection{Alert}
+\textit{Amends Alert (PH, 165).}
+
+Increase your Wisdom score by 1, to a maximum of 20. 
+
+You gain a bonus to initiative equal to your Wisdom modifier (minimum of 0), instead of +5.
+
 \subsubsection{GWM and Sharpshooter}
 \textit{Amends Great Weapon Master (PH, 167) and Sharpshooter (PH, 170).}
 
-The final benefits of these feats instead offer the option of a penalty equal to your proficiency bonus to attacks, in exchange for adding twice your proficiency bonus to the damage.
+The final benefits of these feats instead offer the option of taking a penalty of any number to an attack, in exchange for adding twice that number to the damage. You choose the number when you exercise this option.
 
-\subsubsection{Lucky}
-\textit{Amends Lucky (PH, 167).}
+\subsubsection{Medium Armor Master}
+\textit{Amends Medium Armor Master (PH, 168)}
 
-When you use a luck point, roll one additional d20. You can choose to replace one d20 from the original roll with this new d20 roll.
+Increase your Dexterity score by 1, to a maximum of 20.
 
-\subsection{Medium Armor Master}
+\label{balance-feats-subfeats}
+\subsection{Sub-Feats}
+Instead of taking a feat, you may take a single benefit from one of the following feats, and increase your corresponding ability score by 1.
 
-You gain this additional benefit when you take this feat (PH, 168):
-
-\begin{itemize}
-\item Increase your Dexterity score by 1, to a maximum of 20.
-\end{itemize}
+\begin{DndTable}[header=Sub-Feats]{ll}
+    \textbf{Feat} & \textbf{Ability Score} \\
+    Crossbow Expert & Dexterity \\
+    Dual Wielder & Strength or Dexterity \\
+    Polearm Master & Strength \\
+    Sentinel & Strength or Dexterity \\
+    Sharpshooter & Dexterity \\
+    War Caster & Intelligence, Wisdom or Charisma \\
+\end{DndTable}
 
 
 \section{Spells}
-
-\subsection{Identifying Spells}
-Once per turn, you can use your reaction to perform a DC 10 + spell level Intelligence (Arcana) check to identify a spell being cast. The DC is 15 + spell level if the spell is not on one of your class lists. You must have perceived a verbal or somatic component, or a material component not substituted by an arcane focus. For each additional such component you perceive, you gain a +2 bonus to your check.
-
-Whether you succeed or fail this check, you can choose to cast Counterspell as part of the same reaction.
 
 \subsection{Counterspell}
 You gain a +1 to the ability check for each slot level above 3rd.
@@ -440,117 +446,154 @@ You gain a +1 to the ability check for each slot level above 3rd.
 
 If you cast a spell with a casting time of 1 bonus action, you can't cast another spell during the same turn, except for a cantrip with a casting time of 1 action.
 
-\subsubsection{Targeting}
-Spells that target creatures can also target objects where reasonable, as determined by the DM. This overrules Sage Advice (SA2.4, 13).
+This change exists because the original wording requires that "you haven't already taken a bonus action this turn", which conflicts with the possibility of gaining a second bonus action (see \pg{gameplay-bonus-action}).
 
-
+\subsection{Cones}
+Conical effects span an angle of 60 degrees.
 
 \subsubsection{Critical Failure}
 A critical failure occurs when you have disadvantage on an attack roll or ability check and roll two natural 1s. In addition to missing or failing the check, something else happens as determined by the DM. 
-
-
 
 \subsubsection{Improvised Weapons}
 Improvised weapons have the statistics of the most similar simple weapon, as determined by the DM.
 
 An object used as an improvised weapon breaks at the end of combat.
 
-
 \subsubsection{Portent}
 \textit{Amends Portent (PH, 116).}
 
 After you have used your Portent feature to replace a roll, that roll can no longer be rerolled or replaced by any feature, including Portent.
 
+\subsubsection{Targeting}
+Spells that target creatures can also target objects where reasonable, as determined by the DM. This overrules Sage Advice (SA2.4, 13).
 
-\subsection{Identifying Spells}
-While a spell is in the process of being cast, you can identify the spell by succeeding at an Intelligence (Arcana) check with DC 10 plus twice the spell's level. The DC increases by 5 if the spell is not on one of your class lists. You must be able to perceive a verbal or somatic component, or a material component not substituted by an arcane focus. For each such component you perceive, you gain a +1 bonus to your check.
+
+
+
+
 
 
 \chapter{Appendix}
 
+\subsection{Races}
+
 \label{appendix-races}
-\begin{DndTable}[header=Races]{lll}
-    \textbf{Race} & \textbf{Subrace} & \textbf{Source} \\
-    Aarakocra & - & EEPC, 5; see pg.\pageref{balance-race-flying} \\
-    Aasimar & (Base) & VGM, 104 \\
-      & Fallen & VGM, 105 \\
-      & Protector & VGM, 105 \\
-      & Scourge & VGM, 105 \\
+\begin{DndTable}[]{lXl}
+    \textbf{Race} & \textbf{Subrace(s)} & \textbf{Source} \\
+    Aarakocra & - & EEPC, 5; see \pg{balance-race-flying} \\
+    Aasimar & Fallen, Protector, Scourge & VGM, 104 \\
     Bugbear & - & ERLW, 25 \\
     Centaur & - & GGR, 15 \\
     Changeling & - & ERLW, 18 \\
-    Dragonborn & - & PH, 34; see pg.\pageref{balance-race-dragonborn} \\
-    Dwarf & (Base) & PH, 20 \\
+    Dragonborn & - & PH, 34; see \pg{balance-race-dragonborn} \\
+    Dwarf & Hill, Mountain & PH, 20 \\
       & Duergar & SCAG, 104 \\
-      & Hill & PH, 20 \\
-      & Mountain & PH, 20 \\
-    Elf & (Base) & PH, 23 \\
-      & Dark (Drow) & PH, 24 \\
-      & Eladrin & MTF, 62 \\
-      & High & PH, 23 \\
-      & Sea & MTF, 62 \\
-      & Shadar-kai, 63 \\
-      & Wood & PH, 24 \\
+    Elf & Dark/Drow, High, Wood & PH, 23 \\
+      & Eladrin, Sea, Shadar-kai & MTF, 62-63 \\
     Firbolg & - & VGM, 107 \\
-    Genasi & (Base) & EEPC, 9 \\
-      & Air & EEPC, 9 \\
-      & Earth & EEPC, 9 \\
-      & Fire & EEPC, 9 \\
-      & Water & EEPC, 10 \\
-    Gith & (Base) & MTF, 96 \\
-      & Githyanki & MTF, 96 \\
-      & Githzerai & MTF, 96 \\
-    Gnome & (Base) & PH, 36 \\
+    Genasi & Air, Earth, Fire, Water & EEPC, 9 \\
+    Gith & Githyanki, Githzerai & MTF, 96 \\
+    Gnome & Forest, Rock & PH, 36 \\
       & Deep & SCAG, 115 \\
-      & Forest & PH, 37 \\
-      & Rock & PH, 37 \\
     Goblin & - & ERLW, 26 \\
     Goliath & - & VGM, 109 \\
     Half-Elf & Standard & PH, 39 \\
-      & Descended & SCAG, 116 \\
+      & Specific elven descent & SCAG, 116 \\
     Half-Orc & - & PH, 41 \\
-    Halfling & (Base) & PH, 28 \\
+    Halfling & Lightfoot, Stout & PH, 28 \\
       & Ghostwise & SCAG, 110 \\
-      & Lightfoot & PH, 28 \\
-      & Stout & PH, 28 \\
     Hobgoblin & - & ERLW, 26 \\
-    Human & - & PH, 31; see pg.\pageref{balance-race-human} \\ 
+    Human & - & PH, 31; see \pg{balance-race-human} \\ 
     Kalashtar & - & ERLW, 30 \\
     Kenku & - & VGM, 111 \\
-    Kobold & - & VGM, 119; see pg.\pageref{balance-race-kobold} \\
-    Lizardfolk & VGM, 113 \\
-    Loxodon & GGR, 18 \\
+    Kobold & - & VGM, 119; see \pg{balance-race-kobold} \\
+    Lizardfolk & - & VGM, 113 \\
+    Loxodon & - & GGR, 18 \\
     Minotaur & - & GGR, 19 \\
     Orc & - & ERLW, 32 \\
-    Shifter & (Base) & ERLW, 33 \\
-      & Beasthide & ERLW, 34 \\
-      & Longtooth & ERLW, 34 \\
-      & Swiftstride & ERLW, 34 \\
-      & Wildhunt & ERLW, 34 \\
+    Shifter & Beasthide, Longtooth, Swiftstride, Wildhunt & ERLW, 33-34 \\
     Simic Hybrid & - & GGR, 20 \\
     Tabaxi & - & VGM, 115 \\
-\end{DndTable}
-
-\begin{DndTable}[header=Races (Cont'd)]{lll}
-    \textbf{Race} & \textbf{Subrace} & \textbf{Source} \\
-
-    Tiefling & Standard & PH, 43 \\
-      & Devil's Tongue & SCAG, 118 \\
-      & Feral & SCAG, 118 \\
-      & Hellfire & SCAG, 118 \\
-      & Winged & SCAG, 118; see pg.\pageref{balance-race-flying} \\
-      & Infernal Linked & MTF, 21 \\
+    Tiefling & Standard/Asmodeus & PH, 43 \\
+      & Devil's Tongue, Feral, Hellfire & SCAG, 118 \\
+      & Winged & SCAG, 118; see \pg{balance-race-flying} \\
+      & Baalzebul, Dispater, Fierna, Glasya, Levistus, Mammon, Mephistopheles, Zariel & MTF, 21-23 \\
     Triton & - & VGM, 117 \\
     Vedalken & - & GGR, 21 \\
     Warforged & - & ERLW, 36 \\
-    Yuan-ti Pureblood & - & VGM, 120; see pg.\pageref{balance-race-yuanti} \\
+    Yuan-ti & - & VGM, 120; see \pg{balance-race-yuanti} \\
+\end{DndTable}
+
+\subsection{Combat Options}
+
+\label{appendix-combat-options}
+\begin{DndTable}[header=Standard Combat Options]{llX}
+\textbf{Option} & \textbf{Cost} & \textbf{Brief description} \\
+Dash & Action & Gain extra movement on this turn. \\
+Disengage & Action & Movement this turn does not provoke opportunity attacks. \\
+Dodge & Action & Advantage against attacks and Dex saves. \\
+Grapple  & 1 attack & Grab opponent, preventing movement. \\
+Help & Action & Give ally advantage on next check or attack. \\
+Hide & Action & - \\
+Improvise & Action/Bonus & Do something nonstandard, at DM's discretion. \\
+Ready & Action & Hold any other action until triggered. \\
+Search & Action/Bonus & - \\
+Shove & 1 attack & Push opponent directly away, or knock opponent prone. \\
+\end{DndTable}
+
+\begin{DndTable}[header=Advanced Combat Options]{llX}
+\textbf{Action} & \textbf{Cost} & \textbf{Brief description} \\
+Climb Onto & Half movement & Climb onto a bigger creature. You move with it and gain advantage on attacks against it. \\
+Disarm & 1 attack & Knock weapon or item from opponent's hands. \\
+Overrun & Half movement & Charge through opponent's space. \\
+Shove Aside & 1 attack & Push opponent to the side, at disadvantage. \\
+Tumble & Half movement & Slip through opponent's space. \\
 \end{DndTable}
 
 
+\subsection{Bonus Feats}
+\begin{figure}[htbp]
+\label{appendix-feats-bonus-table}
+\begin{DndTable}[header=Bonus Feats (Single)]{ll}
+    \textbf{Feat} & \textbf{Prerequisite} \\
+    Actor & - \\
+    Bountiful Luck & Halfling \\
+    Charger & - \\
+    Drow High Magic & Elf (Drow) \\
+    Dungeon Delver & - \\
+    Durable & - \\
+    Elemental Adept & Spells \\
+    Fade Away & Gnome \\
+    Fey Teleportation & Elf (High) \\
+    Healer & - \\
+    Keen Mind & - \\
+    Mage Slayer & - \\
+    Magic Initiate & Casting ability 11+ \\
+    Martial Adept & - \\
+    Mounted Combatant & - \\
+    Orcish Fury & Half-Orc \\
+    Prodigy & Human / Half-Elf / Half-Orc \\
+    Ritual Caster & Casting ability 11+ \\
+    Second Chance & Halfling \\
+    Shield Master & - \\
+    Skilled & - \\
+    Skulker & Dexterity 13+ \\
+    Spell Sniper & Spells, Casting ability 11+ \\
+    Squat Nimbleness & Dwarf or Small race \\
+    Svirfneblin Magic & Gnome (Deep) \\
+    Wood Elf Magic & Elf (Wood)
+\end{DndTable}
 
-
-
-
+\begin{DndTable}[header=Bonus Feats (Pair)]{lll}
+    \textbf{Feat A} & \textbf{Feat B} & \textbf{Prerequisite} \\
+    Athlete & Weapon Master & - \\
+    Dragon Fear & Dragon Hide & Dragonborn \\
+    Durable & Dwarven Fortitude & Dwarf \\
+    Flames of Phlegethos & Infernal Constitution & Tiefling \\
+    Grappler & Tavern Brawler & - \\
+    Linguist & Observant & -
+\end{DndTable}
+\end{figure}
 
 
 
