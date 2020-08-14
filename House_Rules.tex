@@ -25,11 +25,7 @@
 
 \MakeShortVerb{|}
 
-%\newcommand{\vsp}{\vspace{3pt}}
-%\newcommand{\vcl}{\vspace{-4pt}}
-
 \newcommand{\pg}[1]{pg.\pageref{#1}}
-
 
 \lstset{%
   basicstyle=\ttfamily,
@@ -37,10 +33,12 @@
   breaklines=true,
 }
 
-%\setcounter{tocdepth}{2}
+\setcounter{tocdepth}{2}
 
 \begin{document}
-%
+
+\tableofcontents
+
 %\chapter{Overview}
 %This set of house rules is intended to give players more meaningful choices when creating and advancing their characters. To that end, options that are so strong as to be considered almost "obligatory" have been rebalanced to more reasonable levels, and some weaker options have been strengthened to become more viable next to their stronger counterparts. The intended end result is that experienced players can have more freedom with different character options, some of which may have had good RP potential but were considered "trap options", while newer players are spared the possibility of accidentally crippling their character through "wrong" choices. 
 %
@@ -127,10 +125,9 @@ Some feats and their prerequisites have received balancing changes or have been 
 Parts of certain feats can be taken as half-feats (see \pg{balance-feats-subfeats}).
 
 \subsection{Combat Options}
-Besides the standard options, you can use those from the DMG except for the Mark action (DMG, 271). 
+Besides the standard options, you can use those from the DMG (271-272) except for Mark.
 
 A non-exhaustive list of potentially useful combat options is provided in the Appendix (see \pg{appendix-combat-options}).
-
 
 \subsection{Diagonal Grid Movement}
 The optional rule on diagonal movement (DMG, 252) is in use: every second diagonal on a turn costs twice as much movement.
@@ -478,8 +475,76 @@ Spells that target creatures can also target objects where reasonable, as determ
 
 \chapter{Appendix}
 
-\subsection{Races}
+\subsection{Bonus Feats}
+\begin{figure}[htbp]
+\label{appendix-feats-bonus-table}
+\begin{DndTable}[header=Bonus Feats (Single)]{ll}
+    \textbf{Feat} & \textbf{Prerequisite} \\
+    Actor & - \\
+    Bountiful Luck & Halfling \\
+    Charger & - \\
+    Drow High Magic & Elf (Drow) \\
+    Dungeon Delver & - \\
+    Durable & - \\
+    Elemental Adept & Spells \\
+    Fade Away & Gnome \\
+    Fey Teleportation & Elf (High) \\
+    Healer & - \\
+    Keen Mind & - \\
+    Mage Slayer & - \\
+    Magic Initiate & Casting ability 11+ \\
+    Martial Adept & - \\
+    Mounted Combatant & - \\
+    Orcish Fury & Half-Orc \\
+    Prodigy & Human / Half-Elf / Half-Orc \\
+    Ritual Caster & Casting ability 11+ \\
+    Second Chance & Halfling \\
+    Shield Master & - \\
+    Skilled & - \\
+    Skulker & Dexterity 13+ \\
+    Spell Sniper & Spells, Casting ability 11+ \\
+    Squat Nimbleness & Dwarf or Small race \\
+    Svirfneblin Magic & Gnome (Deep) \\
+    Wood Elf Magic & Elf (Wood)
+\end{DndTable}
 
+\begin{DndTable}[header=Bonus Feats (Pair)]{lll}
+    \textbf{Feat A} & \textbf{Feat B} & \textbf{Prerequisite} \\
+    Athlete & Weapon Master & - \\
+    Dragon Fear & Dragon Hide & Dragonborn \\
+    Durable & Dwarven Fortitude & Dwarf \\
+    Flames of Phlegethos & Infernal Constitution & Tiefling \\
+    Grappler & Tavern Brawler & - \\
+    Linguist & Observant & -
+\end{DndTable}
+\end{figure}
+
+\subsection{Combat Options}
+\label{appendix-combat-options}
+\begin{DndTable}[header=Standard Combat Options]{llX}
+\textbf{Option} & \textbf{Cost} & \textbf{Brief description} \\
+Dash & Action & Gain extra movement on this turn. \\
+Disengage & Action & Movement this turn does not provoke opportunity attacks. \\
+Dodge & Action & Advantage against attacks and Dex saves. \\
+Grapple  & 1 attack & Grab opponent, preventing movement. \\
+Help & Action & Give ally advantage on next check or attack. \\
+Hide & Action & - \\
+Improvise & Action/Bonus & Do something nonstandard, at DM's discretion. \\
+Ready & Action & Hold any other action until triggered. \\
+Search & Action/Bonus & - \\
+Shove & 1 attack & Push opponent directly away, or knock opponent prone. \\
+\end{DndTable}
+
+\begin{DndTable}[header=Advanced Combat Options]{llX}
+\textbf{Action} & \textbf{Cost} & \textbf{Brief description} \\
+Climb Onto & Half movement & Climb onto a bigger creature. You move with it and gain advantage on attacks against it. \\
+Disarm & 1 attack & Knock weapon or item from opponent's hands. \\
+Overrun & Half movement & Charge through opponent's space. \\
+Shove Aside & 1 attack & Push opponent to the side, at disadvantage. \\
+Tumble & Half movement & Slip through opponent's space. \\
+\end{DndTable}
+
+\subsection{Races}
 \label{appendix-races}
 \begin{DndTable}[]{lXl}
     \textbf{Race} & \textbf{Subrace(s)} & \textbf{Source} \\
@@ -527,76 +592,6 @@ Spells that target creatures can also target objects where reasonable, as determ
     Yuan-ti & - & VGM, 120; see \pg{balance-race-yuanti} \\
 \end{DndTable}
 
-\subsection{Combat Options}
-
-\label{appendix-combat-options}
-\begin{DndTable}[header=Standard Combat Options]{llX}
-\textbf{Option} & \textbf{Cost} & \textbf{Brief description} \\
-Dash & Action & Gain extra movement on this turn. \\
-Disengage & Action & Movement this turn does not provoke opportunity attacks. \\
-Dodge & Action & Advantage against attacks and Dex saves. \\
-Grapple  & 1 attack & Grab opponent, preventing movement. \\
-Help & Action & Give ally advantage on next check or attack. \\
-Hide & Action & - \\
-Improvise & Action/Bonus & Do something nonstandard, at DM's discretion. \\
-Ready & Action & Hold any other action until triggered. \\
-Search & Action/Bonus & - \\
-Shove & 1 attack & Push opponent directly away, or knock opponent prone. \\
-\end{DndTable}
-
-\begin{DndTable}[header=Advanced Combat Options]{llX}
-\textbf{Action} & \textbf{Cost} & \textbf{Brief description} \\
-Climb Onto & Half movement & Climb onto a bigger creature. You move with it and gain advantage on attacks against it. \\
-Disarm & 1 attack & Knock weapon or item from opponent's hands. \\
-Overrun & Half movement & Charge through opponent's space. \\
-Shove Aside & 1 attack & Push opponent to the side, at disadvantage. \\
-Tumble & Half movement & Slip through opponent's space. \\
-\end{DndTable}
-
-
-\subsection{Bonus Feats}
-\begin{figure}[htbp]
-\label{appendix-feats-bonus-table}
-\begin{DndTable}[header=Bonus Feats (Single)]{ll}
-    \textbf{Feat} & \textbf{Prerequisite} \\
-    Actor & - \\
-    Bountiful Luck & Halfling \\
-    Charger & - \\
-    Drow High Magic & Elf (Drow) \\
-    Dungeon Delver & - \\
-    Durable & - \\
-    Elemental Adept & Spells \\
-    Fade Away & Gnome \\
-    Fey Teleportation & Elf (High) \\
-    Healer & - \\
-    Keen Mind & - \\
-    Mage Slayer & - \\
-    Magic Initiate & Casting ability 11+ \\
-    Martial Adept & - \\
-    Mounted Combatant & - \\
-    Orcish Fury & Half-Orc \\
-    Prodigy & Human / Half-Elf / Half-Orc \\
-    Ritual Caster & Casting ability 11+ \\
-    Second Chance & Halfling \\
-    Shield Master & - \\
-    Skilled & - \\
-    Skulker & Dexterity 13+ \\
-    Spell Sniper & Spells, Casting ability 11+ \\
-    Squat Nimbleness & Dwarf or Small race \\
-    Svirfneblin Magic & Gnome (Deep) \\
-    Wood Elf Magic & Elf (Wood)
-\end{DndTable}
-
-\begin{DndTable}[header=Bonus Feats (Pair)]{lll}
-    \textbf{Feat A} & \textbf{Feat B} & \textbf{Prerequisite} \\
-    Athlete & Weapon Master & - \\
-    Dragon Fear & Dragon Hide & Dragonborn \\
-    Durable & Dwarven Fortitude & Dwarf \\
-    Flames of Phlegethos & Infernal Constitution & Tiefling \\
-    Grappler & Tavern Brawler & - \\
-    Linguist & Observant & -
-\end{DndTable}
-\end{figure}
 
 
 
