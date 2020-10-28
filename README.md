@@ -6,4 +6,4 @@ These houserules comprise half a page of mandatory rules and a number of optiona
 
 ## Credits
 
-Made using [https://github.com/rpgtex/DND-5e-LaTeX-Template](DnD 5e LaTeX Template).
+Made using [DnD 5e LaTeX Template](https://github.com/rpgtex/DND-5e-LaTeX-Template).
