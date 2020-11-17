@@ -47,7 +47,7 @@
 
 \chapter{Core Houserules}
 
-[Version 7.2.3]
+[Version 7.3.0]
 
 \section{How To Use}
 The rules on this page are mandatory. Every other rule in this document is \textit{optional.} 
@@ -170,9 +170,45 @@ Make a spellcasting ability check against DC 10 + the triggering spell's level. 
 
 If your counterspell is the same spell as the triggering spell, you gain advantage on this check, as less adjustment is needed. If your counterspell is cast at a lower level than the triggering spell, you have disadvantage on this check.
 
-%\subsection{Vancian Magic}
-%Prepared spellcasters can opt to be Vancian spellcasters. During daily preparations, you prepare spells directly into spell slots, which cannot be changed until the next preparation. In return for the reduced flexibility, you gain additional spell slots, described in the table.
-%
+\subsection{Vancian Magic}
+Prepared spellcasters can opt to be Vancian spellcasters, exchanging some spellcasting flexibility for limited access to their entire spell list.
+
+\subsubsection{Preparing Spells}
+During daily preparations, you prepare spells directly into spell slots, instead of preparing a list of spells.
+
+\begin{DndComment}{Example}
+After completing a long rest, a 3rd-level Cleric might have these spells prepared:
+
+\begin{itemize}
+\item \textit{Bless}, \textit{Guiding Bolt}, and two \textit{Cure Wounds}, at 1st level.
+\item \textit{Cure Wounds} and \textit{Inflict Wounds}, at 2nd level.
+\end{itemize}
+
+\noindent This cleric can cast Bless once at 1st level, expending that spell. Her remaining prepared spells are now:
+
+\begin{itemize}
+\item \textit{Guiding Bolt}, and two \textit{Cure Wounds}, at 1st level.
+\item \textit{Cure Wounds} and \textit{Inflict Wounds}, at 2nd level.
+\end{itemize}
+
+\noindent She can cast spells only at the level they were prepared. In this case, she cannot cast \textit{Guiding Bolt} at 2nd level, nor can she cast \textit{Inflict Wounds} at 1st level.
+\end{DndComment}
+
+\subsubsection{Action: Reprepare}
+Vancian casters can reprepare a spell by taking the Reprepare action a number of times equal to the spell's level. Vancian casters can use the Reprepare action a number of times equal to their level, refreshing on a long rest. 
+
+Reprepare requires concentration. If broken, the repreparation fails, wasting any expended uses of Reprepare.
+
+The Arcane Recovery and Natural Recovery features cause Reprepare uses to refresh on a short rest.
+
+If you have a spell "always prepared", using Reprepare to convert another spell to that spell does not count against your limit.
+
+\subsubsection{Ritual Spells}
+Vancian casters can cast a spell as a ritual only if they have it prepared. The ritual spell is cast at the level it was prepared.
+
+Vancian Wizards can ritually cast any spell in their spellbook, as usual.
+
+
 %If you normally have a spell "always prepared", you can convert any other prepared spell to that spell by concentrating for 1 minute per spell level.
 %
 %Arcane Recovery and Natural Recovery, instead of recovering expended spell slots, allows you to re-prepare spell slots with a combined level equal to or less than your level. You cannot re-prepare spells of 6th level or higher. 
