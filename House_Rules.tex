@@ -47,7 +47,7 @@
 
 \chapter{Core Houserules}
 
-[Version 7.3.0]
+[Version 7.4.0]
 
 \section{How To Use}
 The rules on this page are mandatory. Every other rule in this document is \textit{optional.} 
@@ -81,7 +81,7 @@ These opportunity attacks occur while still prone.
 The spell "Counterspell" no longer exists. An optional alternative is available \see{counterspell}.
 
 \subsection{Warlocks}
-Warlocks are based on Intelligence, not Charisma.
+Warlocks are based on Intelligence, not Charisma. Also, the Hexblade's Hex Warrior feature (XGE, 55) is transferred to the Pact of the Blade (PH, 107).
 
 
 
@@ -112,15 +112,7 @@ For every +1 in your base Intelligence modifier (minimum 0), you can opt to lear
 \end{itemize}
 
 \subsection{Races}
-If your race gives a +2 and +1 increase to two fixed ability scores, you may opt to swap the two.
-
-\begin{DndComment}{Example}
-\begin{itemize}
-\item High Elves and Forest Gnomes fulfil the requirements, and can have +2 Dex and +1 Int, or +1 Dex and +2 Int.
-\item Humans, Mountain Dwarves and Changelings do not fulfil the requirements.
-\end{itemize}
-
-\end{DndComment}
+You may swap your race's ability score increase for a +2/+1 increase to two different ability scores.
 
 \subsection{Multiclassing}
 Multiclassing (PH, 163) is allowed. 
@@ -131,7 +123,7 @@ When multiclassing into or from a Barbarian, Paladin or Ranger, you may use Stre
 You can use custom backgrounds. Choose:
 \begin{itemize}
 \item any two skill proficiencies 
-\item any two tool proficiencies or languages 
+\item a total of two tool proficiencies or languages 
 \item one equipment package from any background
 \item one background feature from any background
 \end{itemize}
@@ -160,9 +152,9 @@ Flavour feats are not strong, but have good roleplaying potential and provide si
 By the core houserules, the spell "Counterspell" no longer exists. If you are a bard, or a spellcaster who would originally have access to Counterspell, you can opt to gain this feature at the class level where you gain 3rd-level spells:
 
 \subsubsection{Counterspell}
-If you perceive a spell being cast, you automatically identify it, and can attempt to disrupt that triggering spell based on your knowledge of its school  of magic.
+If you perceive a spell being cast, you automatically identify it, and can attempt to disrupt that triggering spell based on your knowledge of its school of magic, before it takes effect.
 
-A counterspell is a spell from the same school as the triggering spell, which you know or have prepared. You cast your counterspell while adjusting it to disrupt the triggering spell, instead of producing its usual effect. Your counterspell can be cast using a reaction instead of its normal casting time, and requires its usual components, but does not consume them. 
+A counterspell is a spell from the same school as the triggering spell, which you know or have prepared. You cast your counterspell while adjusting it to disrupt the triggering spell, instead of producing its usual effect. Your counterspell can be cast using a reaction instead of its normal casting time, and requires its usual components, but does not consume them.
 
 Because higher-levelled spells use techniques not found in simpler spells, your counterspell's base level cannot be lower than the triggering spell's base level. 
 
@@ -174,7 +166,7 @@ If your counterspell is the same spell as the triggering spell, you gain advanta
 Prepared spellcasters can opt to be Vancian spellcasters, exchanging some spellcasting flexibility for limited access to their entire spell list.
 
 \subsubsection{Preparing Spells}
-During daily preparations, you prepare spells directly into spell slots, instead of preparing a list of spells.
+Instead of preparing a list of spells, you prepare spells directly into spell slots. Whenever you recover a spell slot, choose a spell to occupy that slot. You can use that slot only to cast that spell, unless you take the Reprepare action (below) to change the occupying spell.
 
 \begin{DndComment}{Example}
 After completing a long rest, a 3rd-level Cleric might have these spells prepared:
@@ -184,29 +176,22 @@ After completing a long rest, a 3rd-level Cleric might have these spells prepare
 \item \textit{Cure Wounds} and \textit{Inflict Wounds}, at 2nd level.
 \end{itemize}
 
-\noindent This cleric can cast Bless once at 1st level, expending that spell. Her remaining prepared spells are now:
+\noindent This cleric can cast Bless once (and only once) at 1st level, expending that spell. Her remaining prepared spells will then be:
 
 \begin{itemize}
 \item \textit{Guiding Bolt}, and two \textit{Cure Wounds}, at 1st level.
 \item \textit{Cure Wounds} and \textit{Inflict Wounds}, at 2nd level.
 \end{itemize}
 
-\noindent She can cast spells only at the level they were prepared. In this case, she cannot cast \textit{Guiding Bolt} at 2nd level, nor can she cast \textit{Inflict Wounds} at 1st level.
+\noindent Because she can cast spells only at the level they were prepared, she can cast \textit{Guiding Bolt} only at 1st level, and \textit{Inflict Wounds} only at 2nd level.
 \end{DndComment}
 
 \subsubsection{Action: Reprepare}
-Vancian casters can reprepare a spell by taking the Reprepare action a number of times equal to the spell's level. Vancian casters can use the Reprepare action a number of times equal to their level, refreshing on a long rest. 
+You have a number of uses of Reprepare equal to your level, recovering all expended uses on a long rest. You can reprepare a spell by using an action to Reprepare for a number of consecutive turns equal to the spell's level. 
 
 Reprepare requires concentration. If broken, the repreparation fails, wasting any expended uses of Reprepare.
 
-The Arcane Recovery and Natural Recovery features cause Reprepare uses to refresh on a short rest.
-
 If you have a spell "always prepared", using Reprepare to convert another spell to that spell does not count against your limit.
-
-\subsubsection{Ritual Spells}
-Vancian casters can cast a spell as a ritual only if they have it prepared. The ritual spell is cast at the level it was prepared.
-
-Vancian Wizards can ritually cast any spell in their spellbook, as usual.
 
 
 %If you normally have a spell "always prepared", you can convert any other prepared spell to that spell by concentrating for 1 minute per spell level.
@@ -260,9 +245,15 @@ You gain 2 hit dice per class level, instead of 1.
 Long rests no longer automatically restore hit points. As a long rest ends, you can spend hit dice like in a short rest. Then, recover half your expended hit dice, rounded up.
 
 \subsection{Encumbrance}
-You can opt to track encumbrance as a self-imposed challenge. 
+You can opt to track encumbrance as a self-imposed challenge. Use any of the three modes below.
 
-\begin{DndTable}[header=Encumbrance]{rX}
+\begin{DndTable}[header=Encumbrance (Normal)]{rX}
+\textbf{Carried weight} & \textbf{Effect} \\
+$\leq$ 15 $\times$ Strength & No penalty \\
+$>$ 15 $\times$ Strength & Physically impossible \\
+\end{DndTable}
+
+\begin{DndTable}[header=Encumbrance (Hard)]{rX}
 \textbf{Carried weight} & \textbf{Effect} \\
 $\leq$ 5 $\times$ Strength & No penalty \\
 $>$ 5 $\times$ Strength & Cannot travel at a fast pace \\
@@ -270,6 +261,13 @@ $>$ 10 $\times$ Strength & All speeds -10ft. \\
 $>$ 15 $\times$ Strength & Physically impossible \\
 \end{DndTable}
 
+\begin{DndTable}[header=Encumbrance (Expert)]{rX}
+\textbf{Carried weight} & \textbf{Effect} \\
+$\leq$ 5 $\times$ Strength & No penalty \\
+$>$ 5 $\times$ Strength & All speeds -10ft. \\
+$>$ 10 $\times$ Strength & All speeds -20ft., disadvantage on physical checks, attacks and saves. \\
+$>$ 15 $\times$ Strength & Physically impossible \\
+\end{DndTable}
 \subsection{Diagonal Grid Movement}
 You can choose to move more realistically on a grid. Every second diagonal on a turn costs double (DMG, 252). Additionally, you have width while moving diagonally. 
 
@@ -360,6 +358,7 @@ If you take the Magic Initiate feat, you can cast the chosen 1st level spell onc
     \href{https://thetrove.is/Books/Dungeons\%20\&\%20Dragons/5th\%20Edition\%20(5e)/Core/Mordenkainen\%27s\%20Tome\%20of\%20Foes.pdf}{Mordenkainen's Tome of Foes (MTF)} \\
     \href{https://thetrove.is/Books/Dungeons\%20\&\%20Dragons/5th\%20Edition\%20(5e)/Core/Player\%27s\%20Handbook\%20\%5B10th\%20Print\%5D.pdf}{Player's Handbook (PH)} \\
     \href{https://thetrove.is/Books/Dungeons\%20\&\%20Dragons/5th\%20Edition\%20(5e)/Core/Sword\%20Coast\%20Adventurer\%27s\%20Guide.pdf}{Sword Coast Adventurer's Guide (SCAG)} \\
+    Tasha's Cauldron of Everything \\
     \href{https://thetrove.is/Books/Dungeons\%20\&\%20Dragons/5th\%20Edition\%20(5e)/Core/Volo\%27s\%20Guide\%20to\%20Monsters.pdf}{Volo's Guide to Monsters (VGM)} \\
     \href{https://thetrove.is/Books/Dungeons\%20\&\%20Dragons/5th\%20Edition\%20(5e)/Core/Xanathar\%27s\%20Guide\%20to\%20Everything.pdf}{Xanathar's Guide to Everything (XGE)} \\
 \end{DndTable}
@@ -375,16 +374,16 @@ Action & Hide & - \\
 Action & Ready & Hold any other action until triggered. \\
 Action/Bonus & Improvise & Do something nonstandard, at DM's discretion. \\
 Action/Bonus & Search & Attempt to find a hidden object or creature. \\
-1 attack & Grapple & Attempt  to grab opponent. (Ath vs. Ath/Acr) \\
-1 attack & Shove & Attempt to push away or knock prone. (Ath vs. Ath/Acr)\\
+1 attack & Grapple & Attempt to grab opponent (+1 size). (Ath vs. Ath/Acr) \\
+1 attack & Shove & Attempt to push 5ft away or knock prone (+1 size). (Ath vs. Ath/Acr)\\
 \end{DndTable}
 
 \begin{DndTable}[header=Advanced Combat Options]{llX}
 \textbf{Cost} & \textbf{Option} & \textbf{Brief description} \\
 Action & Gain B.A. & Gain another bonus action. \\
 1 attack & Disarm & Attempt to knock weapon or item from opponent's hands. (Attack vs. Ath/Acr) \\
-1 attack & Shove Aside & Attempt to push opponent to the side. (Ath[disadv] vs. Ath/Acr) \\
-Half speed & Climb Onto & Attempt to climb onto creature (2 sizes bigger), gaining advantage on attacks against it. You may get thrown off. (Ath vs. Acr) \\
+1 attack & Shove Aside & Attempt to push opponent to the side (+1 size). (Ath[disadv] vs. Ath/Acr) \\
+Half speed & Climb Onto & Attempt to climb onto creature (+2 size), gaining advantage on attacks against it. You may be thrown off. (Ath vs. Acr) \\
 Free & Overrun & Attempt to charge through opponent's space. (Ath vs. Ath/Acr) \\
 Free & Tumble & Attempt to slip through opponent's space. (Acr vs. Ath/Acr) \\
 \end{DndTable}
@@ -474,7 +473,7 @@ You can take a single flavour feat, or a matched pair of feats (e.g. 3A and 3B) 
     Skulker & Dexterity 13+ & - & More hiding places, see better in dim light. \\
     Spell Sniper & Spells, Casting ability 11+ & - & Doubles spell attack range, learn one cantrip. \\
     Squat Nimbleness & Dwarf or Small race & STR/DEX & Move faster, learn Ath/Acr, escape grapples.\\
-    Svirfneblin Magic & Gnome (Deep) & - & Learn a variety of sneak and illusion magic. \\
+    Svirfneblin Magic & Gnome (Deep) & - & Learn a variety of illusion magic. \\
     Wood Elf Magic & Elf (Wood) & - & Druid cantrip, longstrider, pass without trace. \\
 \end{DndTable}
 
