@@ -14,11 +14,12 @@
 % For further options (multilanguage documents, hypenations, language environments...)
 % please refer to babel/polyglossia's documentation.
 
-\usepackage[utf8]{inputenc}
+\usepackage{appendix}
 \usepackage[singlelinecheck=false]{caption}
 \usepackage{hyperref}
+\usepackage[utf8]{inputenc}
 \usepackage{lipsum}
-\usepackage{listings}q
+\usepackage{listings}
 \usepackage{shortvrb}
 \usepackage{stfloats}
 \usepackage{subfiles}
@@ -61,6 +62,9 @@ All optional rules are designed such that choosing it affects only you, and no o
 You can use any material from the official sourcebooks \see{sources}. Ask before using Unearthed Arcana or homebrew.
 
 Balancing will be done on a case-by-case basis, when it seems necessary. 
+
+\subsubsection{New Players}
+An introduction to D\&D 5e can be found in the Appendix \see{new-players-guide}.
 
 \newpage
 \section{Houserules}
@@ -198,11 +202,6 @@ You choose the slot to reprepare and the new spell to occupy it when you take th
 
 If a feature says you have a spell "always prepared", using Reprepare to convert another spell to that spell does not count against your limit.
 
-
-%If you normally have a spell "always prepared", you can convert any other prepared spell to that spell by concentrating for 1 minute per spell level.
-%
-%Arcane Recovery and Natural Recovery, instead of recovering expended spell slots, allows you to re-prepare spell slots with a combined level equal to or less than your level. You cannot re-prepare spells of 6th level or higher. 
-%
 %\begin{DndTable}[header=Vancian Spell Slots]{r | ccccccccc}
 %\textbf{Level} & \textbf{1st} & \textbf{2nd} & \textbf{3rd} & \textbf{4th} & \textbf{5th} & \textbf{6th} & \textbf{7th} & \textbf{8th} & \textbf{9th} \\
 %\hline
@@ -227,7 +226,7 @@ If a feature says you have a spell "always prepared", using Reprepare to convert
 %19th & 6 & 6 & 5 & 4 & 4 & 3 & 2 & 1 & 1 \\
 %20th & 6 & 6 & 5 & 4 & 4 & 3 & 2 & 2 & 1 \\
 %\end{DndTable}
-%
+
 
 
 
@@ -349,8 +348,8 @@ If you take the Magic Initiate feat, you can cast the chosen 1st level spell onc
 
 
 
-
-\chapter{Appendix}
+\appendix
+\chapter{Tables}
 
 \label{sources}
 \begin{DndTable}[header=Official Sourcebooks]{l}
@@ -505,5 +504,86 @@ You can take a single flavour feat, or a matched pair of feats (e.g. 3A and 3B) 
 \end{DndTable}
 
 \twocolumn
+
+
+
+
+
+\label{new-players-guide}
+\chapter{New Player's Guide}
+
+\section{Basics}
+
+All characters have six \textbf{ability scores}: Strength, Dexterity, Constitution, Intelligence, Wisdom, and Charisma. They represent how good characters are at different types of tasks. Characters also have features from:
+
+\begin{itemize}
+\item their \textbf{race}, like "human" or "elf",
+\item their \textbf{class}, like "paladin" or "wizard",
+\item their \textbf{background}, like "entertainer" or "spy".
+\end{itemize}
+
+\subsection{Ability Scores}
+The average human has a score of 10 in each of the six abilities. Every 2 points in an ability score grants a +1 modifier to relevant dice rolls. 
+
+For example, a Strength score of 10 or 11 grants you a +0 modifier to kick down a door, to hit with a club, or resist being shoved. A score of 14 or 15 would grant a +2 modifier, while 8 or 9 would grant -1.
+
+You can think about modifiers as roughly being standard deviations.
+
+\begin{DndComment}{Intelligence and Wisdom}
+
+\noindent Intelligence (book-smarts) and Wisdom (street-smarts) are sometimes confused.
+\begin{itemize}
+\item Intelligence is recalling the scientific name of a mushroom, while Wisdom is figuring out if you can eat it.
+\item Intelligence is solving the sphinx's riddle, while Wisdom is realising it intends to kill you anyway.
+\end{itemize}
+\end{DndComment}
+
+\subsection{Race, Class, Background}
+Your race, class and background give you features that differentiate you from other characters. 
+
+Races represent your genetics and culture of origin. For example, dwarves are short and slow, but have darkvision, can speak Dwarvish, and can use warhammers. 
+
+Classes represent your actively developed capabilities. For example, a Fighter will continually improve their skill at arms, while a druid gains more powerful spells as she grows more attuned with nature. A character's class is usually their most important aspect.
+
+Backgrounds represent your life experience. For example, a spy is good at deception and stealth, and knows how to pick locks. 
+
+
+\section{Dice Rolls}
+
+There are three kinds of d20 rolls: \textit{checks}, \textit{attacks}, and \textit{saves}.
+
+\subsection{Checks}
+Ability checks, or just \textit{"checks"}, are attempts to do something difficult, like bluff a guard, search for a hidden door, or cheat at a card game. 
+
+Making a check is simple. Roll a d20 and add the relevant ability modifier. For example, if your Intelligence is 16, your modifier is +3. An Intelligence check will therefore be 1d20 + 3, which is between a minimum of 4 and a maximum of 23. 
+
+\begin{DndComment}{Proficiency}
+
+\noindent Some characters have specialised training, represented by \textit{proficiency} in certain skills. For example, a character proficient in History could add their proficiency bonus of +2 to any History-related check. The size of this bonus increases slowly as you level up.
+
+\end{DndComment}
+
+\subsection{Attacks}
+Attacks are attempts to aim at a small target. This usually occurs when attacking with a weapon. Roll a d20, and add your Strength modifier (for melee weapons) or Dexterity modifier (for ranged weapons). 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 \end{document}
