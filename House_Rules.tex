@@ -577,15 +577,18 @@ All characters have six \textbf{abilities}: Strength, Dexterity, Constitution, I
 \end{itemize}
 
 \subsection{Abilities}
-Your character has a \textbf{score} for each ability. An ability score of 10 is the human average.
+Your character has a score for each ability. An ability score of 10 is the human average.
 
+Ability scores translate to a \textbf{modifier}. These modifiers are much more important than their underlying scores, because modifiers are added directly to dice rolls. An ability score of 10 corresponds to a modifier of 0. Every 2 extra points in an ability score grants a +1 to your modifier. 
 
-Ability scores translate to a \textbf{modifier}. An ability score of 10 corresponds to a modifier of 0. Every 2 extra points in an ability score grants a +1 to your modifier. 
-
-For example, a Strength score of 10 or 11 grants you a +0 Strength modifier. A score of 14 or 15 would grant a +2 modifier, while 8 or 9 would grant -1.
-
-Ability modifiers are added to dice rolls which use that ability, so high modifiers are good.
-
+\begin{DndTable}[]{ll}
+    \textbf{Ability score} & \textbf{Modifier} \\
+    8-9 & –1 \\
+    10-11 & ±0 \\
+    12-13 & +1 \\
+    14-15 & +2 \\
+    ... & ... \\
+\end{DndTable}
 
 \begin{DndComment}{Intelligence and Wisdom}
 
@@ -614,7 +617,7 @@ Backgrounds represent your life experience. For example, a spy is good at decept
 A d20 is a 20-sided die. There are three kinds of d20 rolls: \textbf{checks}, \textbf{attacks}, and \textbf{saves}.
 
 \subsection{Checks}
-Ability checks, or just \textit{"checks"}, are attempts to do something difficult, like bluff a guard, search for a hidden door, or cheat at a card game. Checks are tied to an ability. Roll a d20, and add the associated ability modifier. For example, if your Intelligence is 16, your modifier is +3. Therefore, your Intelligence check will be d20 + 3, which is at least 4 and at most 23.
+Ability \textbf{checks}, or just "checks", are attempts to do something difficult, like bluff a guard, search for a hidden door, or cheat at a card game. Checks are tied to an ability. Roll a d20, and add the associated ability modifier. For example, if your Intelligence is 16, your modifier is +3. Therefore, your Intelligence check will be d20 + 3, which is at least 4 and at most 23.
 
 If your check exceeds the task's Difficulty Class, or DC, you succeed.
 
@@ -627,14 +630,14 @@ If your check exceeds the task's Difficulty Class, or DC, you succeed.
 \end{DndComment}
 
 \subsection{Attacks}
-An attack is an attempt to aim a weapon at a small target, such as a gap in an enemy's armour. Roll a d20, and add your Strength modifier for melee weapons or Dexterity modifier for ranged. If you are proficient with the weapon used, add your proficiency bonus.
+An \textbf{attack} is an attempt to aim a weapon at a small target, such as a gap in an enemy's armour. Roll a d20, and add your Strength modifier for melee weapons or Dexterity modifier for ranged. If you are proficient with the weapon used, add your proficiency bonus.
 
 If your attack roll exceeds the target's Armour Class, or AC, then your attack hits, and you can proceed to make the weapon's damage roll.
 
 A special feature of attacks is that a natural 1 on the d20 always misses, and a natural 20 is a critical hit \see{critical-hit}, doing extra damage.
 
 \subsection{Saves}
-A saving throw, or just \textit{"save"}, is an instinctive, involuntary action to save yourself from an effect. Saves are tied to an ability. For example, you might roll a Dexterity save to avoid a fireball, or a Constitution save to resist poison. Roll a d20, and add the linked ability modifier. If you are proficient in the save of the associated ability, add your proficiency bonus.
+A saving throw, also called a "\textbf{save}", is an instinctive, involuntary action to save yourself from an effect. Saves are tied to an ability. For example, you might roll a Dexterity save to avoid a fireball, or a Constitution save to resist poison. Roll a d20, and add the linked ability modifier. If you are proficient in the save of the associated ability, add your proficiency bonus.
 
 If your save exceeds the effect's Difficulty Class, or DC, you succeed.
 
@@ -659,13 +662,15 @@ At the start of each of your turns, you get:
 
 Your \textbf{action} is the most powerful and flexible of the four. It is usually used to Attack or Cast A Spell, but you can take any actions from the standard list \see{combat-options}, or take an action from your class or race.
 
-Your \textbf{bonus action} can only be used to do specific things which say they cost a bonus action. For example, Barbarians need to use a bonus action to enter a rage, while a Wizard might never use a bonus action.
+Your \textbf{bonus action} can only be used to do specific things which say they cost a bonus action. For example, Barbarians need to use a bonus action to enter a rage, while a Wizard might never use a bonus action. Most characters start with nothing that uses bonus actions.
 
-An \textbf{object interaction} is used to draw a sheathed weapon, sheathe a drawn weapon, open a door, or other similar actions. It is not used up if you simply drop a held item.
+An \textbf{object interaction} can be used to draw one sheathed weapon, or sheathe one drawn weapon, or open one door, or other similar actions. It is not used up if you simply drop a held item.
 
-The three actions above can only be used on your turn. Your \textbf{reaction}, however, can be used on anyone's turn. Like bonus actions, reactions can only be used to do specific things. The most common reaction is an \textit{opportunity attack}, which can be made when a creature leaves your melee reach.
+The three actions above can only be used on your turn. Your \textbf{reaction}, however, can be used on anyone's turn. Like bonus actions, reactions can only be used to do specific things. Most characters only need to care about \textit{opportunity attacks}, which can be made when a creature leaves your melee reach.
 
-In addition to the four actions, you can \textbf{move} up to your speed. For example, if your speed is 30ft, you can move up to a total of 30ft during your turn, distributed as you wish between your actions.
+\subsubsection{Movement}
+
+In addition to the four actions, you can \textbf{move} up to your speed, on your turn. For example, if your speed is 30ft, you can move up to a total of 30ft during your turn, distributed as you wish between your actions.
 
 
 
