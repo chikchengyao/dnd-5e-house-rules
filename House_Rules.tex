@@ -53,11 +53,11 @@
 
 \chapter{Core Houserules}
 
-\noindent [Version 7.6.1]
+\noindent [Version 8.0.0]
 
 \section{How To Use}
-The rules on this page are mandatory. 
-Every other rule in this document is \textit{optional.} 
+\textbf{The rules on this page are mandatory.}
+Every other rule in this document is optional.
 
 \subsubsection{Optional Rules}
 Some optional rules provide mild benefits, while others can be self-imposed challenges. 
@@ -78,10 +78,13 @@ A primer to D\&D 5e can be found in Appendix \ref{new-players-guide} (\pg{new-pl
 \newpage
 \section{Houserules}
 
-\subsection{Base Ability Scores}
+\subsection{Ability Scores}
 Use standard \href{https://chicken-dinner.com/5e/5e-point-buy.html}{27-point buy} (PH, 13) for your ability scores. 
-
 At 1st level, ability scores are capped at 17, after racial bonuses.
+
+At character levels 3, 7, 11, 15, and 19, all characters receive an ASI of 2 points, which cannot be exchanged for a feat.
+
+At the same time, ASIs received at class levels 4, 8, 12, 16 and 19 can be used only to gain a feat.
 
 \subsection{Difficulty Classes}
 To succeed, a roll must strictly exceed, not just equal, its DC. 
@@ -175,13 +178,13 @@ You no longer need an Intelligence or Wisdom score of 13 or higher.
 \paragraph{Magic Initiate, Ritual Caster, Spell Sniper} (PH, 168-170) 
 You need 11 points or more in the spellcasting ability you choose.
 
-\subsection{Flavour Feats}
-\label{flavour-feats}
+\subsection{Minor Feats}
+\label{minor-feats}
 At level 1, and whenever you gain an Ability Score Increase from your class, 
-you can opt to take one flavour feat from the table in the Appendix (\pg{flavour-feats-table}). 
-Ignore ability score increases from flavour feats.
+you can opt to take one minor feat from the table in the Appendix (\pg{minor-feats-table}). 
+Ignore ability score increases from minor feats.
 
-Flavour feats are not strong, but have good roleplaying potential and provide situational benefits.
+Minor feats are not strong, but have good roleplaying potential and provide situational benefits.
 
 \subsection{Counterspell}
 \label{counterspell}
@@ -518,63 +521,113 @@ Half speed & Climb Onto & Attempt to climb onto creature (+2 size), gaining adva
 \end{DndTable}
 
 \onecolumn
-\section{Flavour Feats}
-\label{flavour-feats-table}
 
-You can take a single flavour feat, or a matched pair of feats (e.g. 3A and 3B) from the Flavour Feats (Paired) table. 
-Such a pair counts as a single flavour feat. 
-ASIs do not apply when feats are chosen as flavour feats, but are included for reference in case you choose these feats as normal feats.
+\section{Major Feats}
+\label{major-feats-table}
 
-\begin{DndTable}[header=Flavour Feats (Single)]{llll}
+ASIs do not apply when feats are chosen as major feats, but are included for reference.
+
+\begin{DndTable}[header=Major Feats]{llll}
+    \textbf{Feat} & \textbf{Prerequisite} & \textbf{ASI} & \textbf{Benefit} \\
+    Aberrant Dragonmark & - & CON & Learn sorcerer cantrip, spend hit dice for combat effects. \\
+    Alert & - & CHA & +5 initiative, immune to surprise, unseen attacks hit you neutrally. \\ % Weak?
+    Crossbow Expert & - & - & Ignore 'loading', shoot within 5ft, bonus action shoot. \\
+    Crusher & - & STR/CON & Bludgeoning damage shoves 5ft, crits grant 1 round advantage. \\
+    Defensive Duelist & DEX 13 & - & If wielding finesse weapon, use reaction to increase AC. \\
+    Dual Wielder & - & - & +1 AC, use non-light weapons, draw both weapons at once. \\
+    Elven Accuracy & Elf / Half-elf & DEX/Mental& Roll 3 d20s for advantage on DEX/INT/WIS/CHA attacks. \\
+    Fey Touched & - & Mental & Learn misty step, and divination/enchantment spell. \\
+    Great Weapon Master & - & - & If crit or KO, bonus action attack. -5/+10 to attacks. \\
+    Gunner & DM approval & DEX & Learn firearms, ignore 'loading', shoot within 5ft. \\
+    Heavily Armored & Medium armor & STR & Learn heavy armor. \\
+    Heavy Armor Master & Heavy armor & STR & Nonmagical physical damage reduced by 3. \\
+    Lightly Armored & STR/DEX & - & Learn light armor. \\
+    Lucky & not allowed & - & This feat is specifically not allowed. \\
+    Medium Armor Master & Medium armor & - & Armor doesn't impede stealth, add up to 3 AC from DEX. \\
+    Mobile & - & - & Speed +10ft, Dash to ignore terrain, your attack target can't OA. \\
+    Moderately Armored & Light armor & STR/DEX & Learn medium armor and shields. \\
+    Piercer & - & STR/DEX & Reroll piercing damage, crits get +1 damage die. \\
+    Polearm Master & - & - & Bonus action d4 attack. Entering your reach triggers OA. \\
+    Resilient & - & Any & Gain proficiency in saves for one ability. \\
+    Revenant Blade & Elf & STR/DEX & +1 AC while using double-bladed scimitar. Counts as finesse. \\
+    Savage Attacker & not allowed & - & This feat is specifically not allowed. \\
+    Sentinel & - & - & Your OAs cripple, ignore Disengage. OA if enemy attacks friend. \\
+    Sharpshooter & - & - & Increased range, ignore cover, -5/+10 to attacks. \\
+    Slasher & - & STR/DEX & Slashing damage reduces speed, crits grant 1 round disadvantage. \\
+    Tough & - & - & Additional 2 HP per level. \\
+    War Caster & - & - & Advantage on concentration. Somatic with hands full. OA spells. \\
+    Artificer Initiate & INT 11 & - & One each of cantrip, 1st-level spell, tool proficiency. \\ % Needs to be buffed
+    Barbarian Initiate (NEW) & STR 11 & - & Rage once per long rest. \\
+    Bard Initiate (NEW) & CHA 11 & - & Two cantrips, one spell, and some Bardic Inspiration. \\
+    Cleric Initiate (NEW) & WIS 11 & - & Two cantrips, one spell, and mini Divine Intervention. \\
+    Druid Initiate (NEW) & WIS 11 & - & Two cantrips, one spell, and Wild Shape. \\
+    Eldritch Adept & INT 11 & - & Learn a warlock invocation. \\
+    Fighting Initiate & STR/DEX 11 & - & Learn one Fighting Style. \\
+    Infuser Initiate (NEW) & INT 11 & - & Learn two artificer infusions, infuse one. \\
+    Martial Adept & STR/DEX 11 & - & Two Battlemaster manoeuvres and one superiority d6. \\
+    Metamagic Adept & CHA 11 & - & Learn two metamagics, gain 2 sorcery points. \\
+    Monk Initiate (NEW) & DEX\&WIS 11 & - & 2 Ki points, Flurry of Blows, Patient Defense, Step of the Wind. \\
+    Paladin Initiate (NEW) & STR\&CHA 11 & - & Learn mini Divine Smite. \\
+    Ranger Initiate (NEW) & DEX\&WIS 11 & - & Learn one spell, some ranger skills, understand plants/beasts. \\
+    Rogue Initiate (NEW) & DEX 11 & - & Learn skill, thieves' tools, Thieves' Cant, Cunning Action Hide. \\
+    Sorcerer Initiate (NEW) & CHA 11 & - & Three cantrips, one spell. \\
+    Warlock Initiate (NEW) & INT 11 & - & Two cantrips, one spell which recharges on short rest. \\
+    Wizard Initiate (NEW) & INT 11 & - & Two cantrips, one spell, and ritual cast Find Familiar. \\
+    
+\end{DndTable}
+
+\newpage
+\section{Minor Feats}
+\label{minor-feats-table}
+
+ASIs do not apply when feats are chosen as minor feats, but are included for reference. 
+
+\begin{DndTable}[header=Minor Feats]{llll}
     \textbf{Feat} & \textbf{Prerequisite} & \textbf{ASI} & \textbf{Benefit} \\
     Actor & - & CHA & Mimic people and sounds. \\
+    Athlete & - & STR/DEX & Easily climb, jump and stand from prone. \\
     Bountiful Luck & Halfling & - & Give Lucky to allies. \\
     Charger & - & - & When Dashing, also attack or shove. \\
-    Drow High Magic & Elf (Drow) & - & Detect magic, levitate, and dispel magic. \\
+    Chef & - & CON/WIS & Learn cook's tools, and cook food which heals. \\
+    Dragon Fear & Dragonborn & STR/CON/CHA & Use breath weapon to frighten. \\
+    Dragon Hide & Dragonborn & STR/CON/CHA & Gain natural armour and claws. \\
+    Drow High Magic & Elf (Drow) & - & Learn Detect Magic, Levitate, and Dispel Magic. \\
     Dungeon Delver & - & - & Find secret doors and resist traps. \\
+    Durable & - & CON & More reliable healing from hit dice. \\
+    Dwarven Fortitude & Dwarf & CON & Heal while Dodging. \\
     Elemental Adept & Spells & - & Strengthen spells of one element. \\
     Fade Away & Gnome & DEX/INT & Turn invisible when damaged. \\
-    Fey Teleportation & Elf (High) & INT/CHA & Learn Sylvan and misty step. \\
+    Fey Teleportation & Elf (High) & INT/CHA & Learn Sylvan and Misty Step. \\
+    Flames of Phlegethos & Tiefling & INT/CHA & Somewhat improve fire spells. \\
+    Grappler & - & - & Advantage to hit grapplee, or pin them. \\
     Healer & - & - & Nonmagical healing. \\
+    Infernal Constitution & Tiefling & CON & Resist cold and poison. \\
+    Inspiring Leader & CHA 13 & - & Take 10 min break to grant temp HP. \\
     Keen Mind & - & INT & Photographic memory. \\
+    Linguist & - & INT & Learn 3 languages, and create ciphers. \\
     Mage Slayer & - & - & Harass casters in melee. \\
-    Magic Initiate & Casting ability 11+ & - & Two cantrips and one spell from any class. \\
-    Martial Adept & - & - & Special moves in combat. \\
     Mounted Combatant & - & - & More accuracy and protect your mount. \\
+    Observant & - & INT/WIS & Read lips, better passive perception, investigation. \\
     Orcish Fury & Half-Orc & STR/CON & Burst damage, and revenge when knocked out. \\
-    Prodigy & Human / Half-Elf / Half-Orc & - & One each of language, skill, tool, expertise. \\
-    Ritual Caster & Casting ability 11+ & - & Ritual spells from one class. \\
+    Prodigy & Human / Half-Elf / Half-Orc & - & Learn one language, skill, tool, expertise. \\
+    Ritual Caster & Casting ability 11 & - & Ritual spells from one class. \\
     Second Chance & Halfling & DEX/CON/CHA & Dodge one attack per combat. \\
+    Shadow Touched & - & Mental & Learn Invisibility, and illusion/necromancy spell. \\
     Shield Master & - & - & Better DEX saves, shove with shield. \\
-    Skilled & - & - & 3 skills or tools. \\
-    Skulker & Dexterity 13+ & - & More hiding places, see better in dim light. \\
-    Spell Sniper & Spells, Casting ability 11+ & - & Doubles spell attack range, learn one cantrip. \\
+    Skill Expert & - & Any & Learn one skill and one expertise. \\
+    Skilled & - & - & Learn 3 skills or tools. \\
+    Skulker & DEX 13+ & - & More hiding places, see better in dim light. \\
+    Spell Sniper & Spells, Casting ability 11 & - & Doubles spell attack range, learn one cantrip. \\
     Squat Nimbleness & Dwarf or Small race & STR/DEX & Move faster, learn Ath/Acr, escape grapples.\\
-    Svirfneblin Magic & Gnome (Deep) & - & Nondetection, blind/deafness, blur, disguise self. \\
+    Svirfneblin Magic & Gnome (Deep) & - & Learn Nondetection, Blind/Deaf, Blur, Disguise Self. \\
+    Tavern Brawler & - & STR/CON & Fight and grapple, without weapons. \\
+    Telekinetic & - & Mental & Invisible mage hand, and telekinetic shove. \\
+    Telepathic & - & Mental & One way telepathic speech. Learn Detect Thoughts. \\
+    Weapon Master & - & STR/DEX & Four weapon proficiencies. \\
     Wood Elf Magic & Elf (Wood) & - & Druid cantrip, longstrider, pass without trace. \\
 \end{DndTable}
 
-\begin{DndTable}[header=Flavour Feats (Paired)]{lllll}
-    \textbf{Pair} & \textbf{Feat} & \textbf{Prerequisite} & \textbf{ASI} & \textbf{Benefit} \\
-    \hline
-    1A & Athlete & - & STR/DEX & Easily climb, jump and stand from prone. \\
-    1B & Weapon Master & - & STR/DEX & Four weapon proficiencies. \\
-    \hline
-    2A & Dragon Fear & Dragonborn & STR/CON/CHA & Use breath weapon to frighten. \\
-    2B & Dragon Hide & Dragonborn & STR/CON/CHA & Natural armour and claws. \\
-    \hline
-    3A & Durable & - & CON & More reliable healing from hit dice. \\
-    3B & Dwarven Fortitude & \textbf{none} & CON & Heal while Dodging. \\
-    \hline
-    4A & Flames of Phlegethos & Tiefling & INT/CHA & Somewhat improve fire spells. \\
-    4B & Infernal Constitution & Tiefling & CON & Resist cold and poison. \\
-    \hline
-    5A & Grappler & - & - & Advantage to hit grapplee, or pin them. \\
-    5B & Tavern Brawler & - & STR/CON & Fight and grapple, without weapons. \\
-    \hline
-    6A & Linguist & - & INT & Learn 3 languages, and create ciphers. \\
-    6B & Observant & - & INT/WIS & Read lips, better passive alertness. \\
-\end{DndTable}
+
 
 \twocolumn
 
@@ -584,7 +637,7 @@ ASIs do not apply when feats are chosen as flavour feats, but are included for r
 \chapter{Difficulty Classes}
 \label{difficulty-classes}
 
-Under the core houserules, a roll must exceed its DC to succeed. 
+Under the core houserules, a roll must strictly exceed its DC to succeed. 
 This includes attack rolls against AC. 
 This change aims to make DCs more intuitive and reversible.
 
@@ -757,12 +810,15 @@ Your \textbf{action} is the most powerful and flexible of the four.
 It is usually used to Attack or Cast A Spell, but you can take any actions from the standard list \see{combat-options}, 
 or take an action from your class or race.
 
-Your \textbf{bonus action} can only be used to do specific things which say they cost a bonus action. 
-For example, Barbarians need to use a bonus action to enter a rage, while a Wizard might never use a bonus action. 
+Your \textbf{bonus action} is essentially a minor action, which can only be used to do certain specific things. 
+Barbarians need to use a bonus action to enter a rage, while a Wizard might never use a bonus action. 
 Most characters start with nothing that uses bonus actions.
 
 An \textbf{object interaction} can be used to 
-draw one sheathed weapon, or sheathe one drawn weapon, or open one door, or other similar actions. 
+draw one sheathed weapon, 
+or sheathe one drawn weapon, 
+or open one door, 
+or other similar actions. 
 It is not used up if you simply drop a held item.
 
 The three actions above can only be used on your turn. 
