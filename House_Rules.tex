@@ -85,9 +85,11 @@ Use standard \href{https://chicken-dinner.com/5e/5e-point-buy.html}{27-point buy
 
 At \underline{character level} 3, 7, 11, 15, and 19, all characters receive an ASI of 2 points, which cannot be traded for a feat.
 
-In exchange, you do not receive ASIs from your class at \underline{class level} 4, 8, 12, 16 and 19. Instead, you can receive any major feat \see{major-feats-table} or minor feat \see{minor-feats-table}. Any ASIs within these feats (i.e., within half-feats) are ignored.
+In exchange, you do not receive ASIs from your class at \underline{class level} 4, 8, 12, 16 and 19. Instead, you can receive any major feat \see{major-feats-table} or minor feat \see{minor-feats-table}, ignoring any ASIs within them (i.e., within half-feats).
 
-ASIs received from classes at other class levels work normally. If traded for feats, those feats are the only feats which can increase ability scores.
+At campaign start, you may have a maximum of one major and one minor feat.
+
+ASIs received from classes at other class levels work normally, ignoring all of the above.
 
 \subsection{Difficulty Classes}
 To succeed, a roll must strictly exceed, not just equal, its DC. 
@@ -317,12 +319,14 @@ Then, recover half your expended hit dice, rounded up.
 \subsection{Diagonal Grid Movement}
 You can choose to move more realistically on a grid. 
 Every second diagonal on a turn costs double (DMG, 252). 
-Additionally, you have width while moving diagonally. 
 
-\begin{DndComment}{Example}
-Because you have width, if you step northeast you will also pass through the north and east grid squares. 
-Therefore, you can't step diagonally if either of those squares are blocked, and you provoke opportunity attacks from both squares.
-\end{DndComment}
+%%%% Removed, because I intend to enforce this universally
+%Additionally, you have width while moving diagonally. 
+%
+%\begin{DndComment}{Example}
+%Because you have width, if you step northeast you will also pass through the north and east grid squares. 
+%So, you can't step diagonally if either of those squares are blocked, and you provoke opportunity attacks from both squares.
+%\end{DndComment}
 
 \subsection{Proficiency Dice}
 You can opt to use proficiency dice instead of a flat proficiency bonus (DMG, 263).
@@ -642,7 +646,7 @@ except that you can cast the 1st-level spell from this feat once per short rest 
 
 \DndFeatHeader{Well Prepared}
 \label{well-prepared}
-When confronted with a situation that calls for a mundane item, you may make an Intelligence or Wisdom check with a DC of 5 plus the item's gp value. 
+When confronted with a situation that calls for a mundane item, you may make an Intelligence or Wisdom check with a DC of 0 plus the item's cost in gold pieces, plus the item's weight in pounds.
 On a success, you "happen" to have the item, bought some time ago. 
 Deduct the price of the item from your money. 
 
