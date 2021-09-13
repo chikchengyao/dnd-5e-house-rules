@@ -53,7 +53,7 @@
 
 \chapter{Core Houserules}
 
-\noindent [Version 8.1.1]
+\noindent [Version 8.2.0]
 
 \section{How To Use}
 \textbf{You only need to read and follow the rules on this page.} You are recommended to glance through the second and third pages, which contain a reference list of the major and minor feats available.
@@ -218,7 +218,7 @@ Spells of 2nd level from minor feats are withheld until character level 3, and s
     Shield Master & - & PH, 170 & Better DEX saves, bonus action shove with shield. \\
     Skill Expert & - & TCE, 80 & Learn one skill and one expertise. \\
     Skilled & - & PH, 170 & Learn three skills or tools. \\
-    Skulker & DEX 13+ & PH, 170 & Hide and see in dim light, missed attacks don't break stealth. \\
+    Skulker & DEX 13+ & PH, 170 & Hide, and see, in dim light. Missed attacks don't break stealth. \\
     Spell Sniper & Spells, \underline{Cast stat 11} & PH, 170 & Learn one attack cantrip, attack range doubled, ignore cover. \\
     Stunning Irruption (NEW) & - & \pg{stunning-irruption} & Initiate combat by bursting through door and stunning. \\
     Tavern Brawler & - & PH, 170 & Improvise weapons, d4 punch, bonus action grapple after punch. \\
@@ -262,13 +262,18 @@ Spells of 2nd level from minor feats are withheld until character level 3, and s
 \chapter{Character Options}
 \noindent You can opt to use any number of these options for your own character.
 
+\subsection{Minor Feats}
+\label{minor-feats}
+At character level 1, and at class levels 4, 8, 12, 16 and 19, 
+you can receive one minor feat \see{minor-feats-table}.
+
 \subsection{Races}
-You may do any or all of the following to your racial Ability Score Increases (ASIs):
+You may do any or all of the following to your racial ability score increases:
 
 \begin{itemize}
 \item split a +2 increase into two +1 increases to different ability scores,
 \item shift each increase to different ability scores, so long as they don't overlap, or
-\item swap your race's ASI entirely for a +2/+1 increase to two different ability scores.
+\item swap it out entirely for a +2/+1 increase to two different ability scores.
 \end{itemize}
 
 \subsection{Backgrounds}
@@ -280,16 +285,15 @@ You can use custom backgrounds. Choose:
 \item one background feature from any background.
 \end{itemize}
 
-\subsection{Minor Feats}
-\label{minor-feats}
-At character level 1, and at class levels 4, 8, 12, 16 and 19, 
-you can receive one minor feat \see{minor-feats-table}.
-
 \subsection{Multiclassing}
 Multiclassing (PH, 163) is allowed. 
 
 When multiclassing into or from a Paladin or a Ranger, 
 you may use Strength instead of Dexterity (and vice versa) to fulfil the ability score minimum. 
+
+\subsection{Tool Proficiencies}
+At class levels 1, 4, 8, 12, 16 and 19 in Barbarian, Fighter, Monk or Rogue, 
+you can gain a tool proficiency, or upgrade an existing tool proficiency to expertise. 
 
 \subsection{Simple HP Formula}
 You can opt to use this formula, which is never lower than the standard formula.
@@ -306,9 +310,22 @@ you can opt to gain one language or tool proficiency, and one of the following:
     \item upgrade a proficient INT skill to expertise.
 \end{itemize}
 
-\subsection{Tool Proficiencies}
-At class levels 1, 4, 8, 12, 16 and 19 in Barbarian, Fighter, Monk or Rogue, 
-you can gain a tool proficiency, or upgrade an existing tool proficiency to expertise. 
+\subsection{Simple Ability Scores}
+Instead of using ability scores which translate to modifiers, you can work solely in modifiers. 
+
+You have 15 points to spend, plus 2 extra points per racial ability score (usually 21 total).
+
+\begin{DndTable}[header=Modifier Cost]{llll}
+    \textbf{Modifier} & \textbf{Cost} \\
+    -2 & refund 3 \\
+    -1 & refund 2 \\
+    0 & costs 0 \\
+    +1 & costs 2 \\
+    +2 & costs 5 \\
+    +3 & costs 9 \\
+\end{DndTable}
+
+When you receive an ASI, just increase one of your modifiers by +1.
 
 \subsection{Counterspell}
 \label{counterspell}
@@ -320,36 +337,52 @@ Bards can also gain this feature when they can learn 3rd-level bard spells.
 
 \subsubsection{Counterspell}
 
-A triggering spell can be countered by casting another spell in a modified form, if both spells are from the same school of magic.
+If you perceive a spell being cast within 60 feet, you can automatically identify it and attempt to counter it, by reverse-engineering a spell of the same school.
 
-If you perceive a spell being cast within 60 feet, you can automatically identify it.
-Choose any spell (except a cantrip) which you know or have prepared, from the same school as the triggering spell.
-You can cast that spell in a modified counterspell form, which: 
+Choose any spell (except a cantrip) which you know or have prepared, from the same school as the triggering spell. You can cast that spell in a modified counterspell form, which:
 \begin{itemize}
 \item uses a reaction instead of its usual cast time,
-\item consumes a spell slot and can be upcast, and 
+\item must consume a spell slot and \textbf{cannot be upcast}, and 
 \item requires its usual components but does not consume them.
 \end{itemize}
 
-%Basic knowledge cannot counteract advanced spellwork. 
-%Therefore, your counterspell cannot be a cantrip, 
-%and its base level cannot be lower than the triggering spell's base level.
+Instead of producing the spell's usual effect, make a spellcasting ability check against DC10 + the triggering spell slot's level. Note that this check is usually made without proficiency.
 
-\noindent When you cast your counterspell, instead of producing its usual effect, make a spellcasting ability check against DC 10 + the triggering spell's slot level. 
-You gain a bonus to this check equal to the level of the spell slot you used. 
-Note that this check is usually made without proficiency. 
-If you succeed, the triggering spell fails, wasting its spell slot.
+If your counterspell's level is higher than the triggering spell slot level, you can roll one more d20 per spell level difference and take the highest roll, similar to advantage. If your counterspell's level is lower, do the same but take the lowest roll, similar to disadvantage.
 
-If your counterspell is the same spell as the triggering spell, you gain advantage on this check, since less modification is needed. 
-
-If your counterspell is cast with a lower level slot than the triggering spell, you have disadvantage; if cast with a higher level slot, you have advantage.
+If your counterspell is the same spell as the triggering spell, you can consider your counterspell to have been upcast by one level.
 
 \begin{DndComment}{Additional Notes}
 \begin{itemize}
-\item Your counterspell must be declared as soon as possible after the triggering spell is cast, and must be before any dice are rolled for it.
-\item Counterspells cannot be counterspelled directly. Instead, anyone who wants to contest the outcome must declare a counterspell to the original triggering spell, then all involved characters will participate in the same counterspell ability check at the same time. The winner of the contest decides if the spell is counterspelled or not, unless nobody passed the counterspell DC, in which case the spell is not counterspelled. If there is a tie, the tied player who declared their counterspell earliest wins.
+\item Your counterspell should be declared as soon as possible after the triggering spell is cast, and must be before any dice are rolled for the triggering spell.
+\item Counterspells cannot be counterspelled. Instead, anyone who wants to contest the outcome must declare a counterspell to the original triggering spell, then all involved characters will participate in the same counterspell ability check at the same time. The winner of the contest decides if the spell is counterspelled or not, unless nobody passed the counterspell DC, in which case the spell is not counterspelled. If there is a tie, the tied player who declared their counterspell earliest wins.
 \end{itemize}
 \end{DndComment}
+
+%A triggering spell can be countered by casting another spell in a modified form, if both spells are from the same school of magic.
+%
+%If you perceive a spell being cast within 60 feet, you can automatically identify it.
+%Choose any spell (except a cantrip) which you know or have prepared, from the same school as the triggering spell.
+%You can cast that spell in a modified counterspell form, which: 
+%\begin{itemize}
+%\item uses a reaction instead of its usual cast time,
+%\item consumes a spell slot and can be upcast, and 
+%\item requires its usual components but does not consume them.
+%\end{itemize}
+%
+%%Basic knowledge cannot counteract advanced spellwork. 
+%%Therefore, your counterspell cannot be a cantrip, 
+%%and its base level cannot be lower than the triggering spell's base level.
+%
+%\noindent When you cast your counterspell, instead of producing its usual effect, make a spellcasting ability check against DC 10 + the triggering spell's slot level. 
+%You gain a bonus to this check equal to the level of the spell slot you used. 
+%Note that this check is usually made without proficiency. 
+%If you succeed, the triggering spell fails, wasting its spell slot.
+%
+%If your counterspell is the same spell as the triggering spell, you gain advantage on this check, since less modification is needed. 
+%
+%If your counterspell is cast with a lower level slot than the triggering spell, you have disadvantage; if cast with a higher level slot, you have advantage.
+
 
 %\subsection{Vancian Magic}
 %Prepared spellcasters can opt to be Vancian spellcasters, 
@@ -487,13 +520,13 @@ You can opt to use proficiency dice instead of a flat proficiency bonus (DMG, 26
 You can opt to track encumbrance as a self-imposed challenge. 
 You can use any of the three suggested modes below.
 
-\begin{DndTable}[header=Encumbrance (Normal)]{rX}
+\begin{DndTable}[header=Encumbrance (Easy)]{rX}
 \textbf{Carried weight} & \textbf{Effect} \\
 $\leq$ 15 $\times$ Strength & No penalty \\
 $>$ 15 $\times$ Strength & Physically impossible \\
 \end{DndTable}
 
-\begin{DndTable}[header=Encumbrance (Hard)]{rX}
+\begin{DndTable}[header=Encumbrance (Medium)]{rX}
 \textbf{Carried weight} & \textbf{Effect} \\
 $\leq$ 5 $\times$ Strength & No penalty \\
 $>$ 5 $\times$ Strength & Cannot travel at a fast pace \\
@@ -501,7 +534,7 @@ $>$ 10 $\times$ Strength & All speeds -10ft. \\
 $>$ 15 $\times$ Strength & Physically impossible \\
 \end{DndTable}
 
-\begin{DndTable}[header=Encumbrance (Impossible)]{rX}
+\begin{DndTable}[header=Encumbrance (Player's Handbook)]{rX}
 \textbf{Carried weight} & \textbf{Effect} \\
 $\leq$ 5 $\times$ Strength & No penalty \\
 $>$ 5 $\times$ Strength & All speeds -10ft. \\
